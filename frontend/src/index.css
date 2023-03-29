@@ -1,13 +1,164 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --accentcolor: rgb(78, 68, 206);
+  --primarycolor: rgb(50, 50, 50);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 0;
+  margin: 0;
 }
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primarycolor);
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.home .openModalBtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: var(--accentcolor);
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.home .openModalBtn:hover {
+  scale: .92;
+}
+/* Modal CSS */
+.modalContainer {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 12px;
+  background-color: var(--primarycolor);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modalContainer .title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.modalContainer .title h1 {
+  font-size: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#modalCloseBtn {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#modalCloseBtn:hover {
+  scale: 0.9;
+  background-color: #202020;
+}
+
+.modalContainer .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContainer .body input {
+  width: calc(100% - 22px);
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.answerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col-75 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#optionsButton {
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: #999;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#removeButton {
+  width: calc(100% - 10px);
+  height: 52px;
+  margin: 10px;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#removeButton:hover {
+  scale: .92;
+}
+
+.modalContainer .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.modalContainer .footer input {
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  background-color: var(--accentcolor);
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.modalContainer .footer input:hover {
+  scale: 0.9;
+}
+/* Modal CSS */
