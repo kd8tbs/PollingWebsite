@@ -1,0 +1,72 @@
+[
+    {
+        "id": 0,
+        "question": "Post 1",
+        "answers": [
+          { "label": "A", "answerWeight": 1 },
+          { "label": "B", "answerWeight": 1 },
+          { "label": "C", "answerWeight": 1 },
+          { "label": "D", "answerWeight": 1 }
+        ],
+        "category": "Gaming",
+        "pollCount": 4,
+        "likes": 10,
+        "answered": false
+    },
+    {
+        "id": 1,
+        "question": "Post 1",
+        "answers": [
+          { "label": "A", "answerWeight": 1 },
+          { "label": "B", "answerWeight": 1 },
+          { "label": "C", "answerWeight": 1 },
+          { "label": "D", "answerWeight": 1 }
+        ],
+        "category": "Gaming",
+        "pollCount": 4,
+        "likes": 10,
+        "answered": false
+    },
+    {
+        "id": 2,
+        "question": "Post 1",
+        "answers": [
+          { "label": "A", "answerWeight": 1 },
+          { "label": "B", "answerWeight": 1 },
+          { "label": "C", "answerWeight": 1 },
+          { "label": "D", "answerWeight": 1 }
+        ],
+        "category": "Gaming",
+        "pollCount": 4,
+        "likes": 10,
+        "answered": false
+    },
+    {
+        "id": 3,
+        "question": "Post 1",
+        "answers": [
+          { "label": "A", "answerWeight": 1 },
+          { "label": "B", "answerWeight": 1 },
+          { "label": "C", "answerWeight": 1 },
+          { "label": "D", "answerWeight": 1 }
+        ],
+        "category": "Gaming",
+        "pollCount": 4,
+        "likes": 10,
+        "answered": false
+    },
+    {
+        "id": 4,
+        "question": "Post 1",
+        "answers": [
+          { "label": "A", "answerWeight": 1 },
+          { "label": "B", "answerWeight": 1 },
+          { "label": "C", "answerWeight": 1 },
+          { "label": "D", "answerWeight": 1 }
+        ],
+        "category": "Gaming",
+        "pollCount": 4,
+        "likes": 10,
+        "answered": false
+    }
+]
