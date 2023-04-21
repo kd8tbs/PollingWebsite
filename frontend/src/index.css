@@ -1,45 +1,236 @@
 :root {
-  --accentcolor: rgb(78, 68, 206);
-  --primarycolor: rgb(50, 50, 50);
+  --accentcolor: rgb(249, 217, 73);
+  --accentcolor2: rgb(240, 240, 240);
+  --accentcolor3: rgb(244, 80, 80);
+  --primarycolor: rgb(60, 72, 107);
 }
 
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--primarycolor);
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
 }
 
 .app {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--primarycolor);
+  width: 100%;
+  height: 100%;
 }
 
+/* Poll CSS */
+#question {
+  font-size: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--primarycolor);
+}
+
+#answer {
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  color: var(--primarycolor);
+  margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid var(--primarycolor);
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#answer .percentage {
+  position: relative;
+  text-align: right;
+  float: right;
+  width: 70px;
+  z-index: 1;
+}
+
+#answer .label {
+  position: absolute;
+  color: var(--accentcolor);
+  top: 50%;
+  width: calc(100% - 40px);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#answer .percentageBar {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  height: 100%;
+  background: var(--primarycolor);
+  transition: width 300ms ease-in-out;
+  z-index: 0;
+}
+/* Poll CSS */
+
+/* Nav Bar CSS */
+.navBarContainer {
+  width: 100%;
+}
+
+.navBarContainer .navBarContent {
+  width: 1200px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBarContainer img {
+  height: 50px;
+}
+
+.navBarContainer button {
+  height: 50px;
+  color: var(--primarycolor);
+  font-size: 25px;
+  justify-content: center;
+  width: 180px;
+  background-color: var(--accentcolor);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.navBarContainer button:hover {
+  scale: .92;
+}
+/* Nav Bar CSS */
+
+/* Home CSS */
 .home {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
+/* Featured Poll */
+.heroContainer {
+  width: 100%;
+  height: 530px;
+  background-color: var(--accentcolor);
+  color: var(--primarycolor);
+  box-shadow: 0 0 10px 0  #000 inset;
+}
+
+.featuredPollContainer {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuredPollContainer .featuredPollContent {
+  padding: 4rem 0;
+}
+
+.featuredPollContainer .featuredPollContent .answers {
+  padding-top: 20px;
+}
+/* Featured Poll */
+
+/* Featured Categories */
+.featuredContainer {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.featuredContainer .featuredContent {
+  width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  
+}
+
+.featuredContainer .featuredContent .featuredPostContainer {
+  margin-top: 1rem;
+  width: 100%;
+  height: 300px;
+  gap: 15px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.featuredContainer .featuredContent .featuredPostContainer .featuredPost {
+  width: 186px;
+  height: 280px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+
+.featuredContainer .featuredContent .featuredPostContainer .featuredPost h2 {
+  margin: 10px;
+  overflow-wrap: break-word;
+}
+
+.featuredContainer .featuredContent .featuredPostContainer .featuredPost .featuredPostTitle {
+  height: 230px;
+  overflow-y: hidden;
+}
+
+.featuredContainer .featuredContent .featuredPostContainer .featuredPost .featuredPostLikes {
+  position: relative;
+  float: right;
+  padding-right: 10px;
+}
+/* Featured Categories */
+/* Home CSS */
+
+/* Create New Button */
 .home .openModalBtn {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 30px;
-  font-size: 30px;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 100%;
+  font-size: 35px;
   background-color: var(--accentcolor);
   border: none;
   transition: 0.5s ease;
   cursor: pointer;
+  color: var(--primarycolor);
 }
 
 .home .openModalBtn:hover {
-  scale: .92;
+  scale: 0.92;
 }
+/* Create New Button */
+
 /* Modal CSS */
+.modalBackdrop{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:rgba(0,0,0,.5);
+  z-index: 2;
+}
+
 .modalContainer {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 600px;
   position: absolute;
   top: 50%;
@@ -48,13 +239,12 @@ body {
   padding: 30px;
   border-radius: 12px;
   background-color: var(--primarycolor);
-  color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .modalContainer .title {
   display: flex;
-  align-items: center;
+  align-items: top;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -62,6 +252,7 @@ body {
 
 .modalContainer .title h1 {
   font-size: 26px;
+  padding: 0px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -80,7 +271,6 @@ body {
 
 #modalCloseBtn:hover {
   scale: 0.9;
-  background-color: #202020;
 }
 
 .modalContainer .body {
@@ -91,10 +281,10 @@ body {
 .modalContainer .body input {
   width: calc(100% - 22px);
   height: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--accentcolor);
   outline: none;
   border-radius: 6px;
-  color: #fff;
+  color: var(--accentcolor2);
   background-color: transparent;
   padding: 10px;
   font-size: 1em;
@@ -122,6 +312,10 @@ body {
   cursor: pointer;
 }
 
+#optionsButton:hover {
+  scale: .92;
+}
+
 #removeButton {
   width: calc(100% - 10px);
   height: 52px;
@@ -136,20 +330,26 @@ body {
 }
 
 #removeButton:hover {
-  scale: .92;
+  scale: 0.92;
 }
 
 .modalContainer .footer {
   position: absolute;
   bottom: 0;
   right: 0;
+  width: calc(100% - 60px);
   padding: 30px;
 }
+.modalContainer .footer .footerContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-.modalContainer .footer input {
+.modalContainer .footer .footerContents input {
   width: 100px;
   height: 35px;
-  color: #fff;
+  color: var(--primarycolor);
   background-color: var(--accentcolor);
   border: none;
   border-radius: 6px;
@@ -158,7 +358,7 @@ body {
   transition: 0.5s ease;
 }
 
-.modalContainer .footer input:hover {
+.modalContainer .footer .footerContents input:hover {
   scale: 0.9;
 }
 /* Modal CSS */
