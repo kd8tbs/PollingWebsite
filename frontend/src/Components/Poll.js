@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import post from "../records.json";
 
 function Poll({ closePollModal, currPoll }) {
   const [answered, setAnswered] = useState(false);
   const [lastSelected, setLastSelected] = useState(0);
-  const [jsonObjIndex, setJsonObjIndex] = useState(0); 
+  const [jsonObjIndex, setJsonObjIndex] = useState(0);
 
-  // JSON-SERVER
-  // https://www.quora.com/How-do-you-write-to-a-JSON-file-from-a-react-app
+  useEffect(() => {
+    if (currPoll.answered === true) setAnswered(true);
+  }, [currPoll.answered]);
+
   function handleSelected(index) {
     // update answerWeight
     if (currPoll.answered === true) {
@@ -22,10 +24,11 @@ function Poll({ closePollModal, currPoll }) {
         if (currPoll.id === post[i].id) {
           post[i].answers[index].answerWeight++;
           post[i].pollCount++;
+          post[i].answered = true;
           setJsonObjIndex(i);
           console.log(post[i]);
           return;
-        } 
+        }
       }
     }
 
@@ -58,7 +61,7 @@ function Poll({ closePollModal, currPoll }) {
           </div>
           <div className="body">
             <div className="featuredPollContainer">
-              <div className="featuredPollContent" style={{padding: "0"}}>
+              <div className="featuredPollContent" style={{ padding: "0" }}>
                 <div className="answers" style={{ color: "#fff" }}>
                   {!answered ? (
                     <>
