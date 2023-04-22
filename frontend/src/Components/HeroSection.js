@@ -61,6 +61,7 @@ function HeroSection() {
                 {poll.answers.map((answer, index) => (
                   <button
                     id="answer"
+                    key={index}
                     onClick={() => {
                       handleSelected(index);
                     }}
@@ -74,6 +75,7 @@ function HeroSection() {
                 {poll.answers.map((answer, index) => (
                   <button
                     id="answer"
+                    key={index}
                     onClick={() => {
                       handleSelected(index);
                     }}

@@ -91,7 +91,11 @@ h1 {
   height: 50px;
 }
 
-.navBarContainer button {
+.navBarContainer .navBarContent .rightContent {
+  display: flex;
+  align-items: center;
+}
+.navBarContainer .navBarContent .rightContent button {
   height: 50px;
   color: var(--primarycolor);
   font-size: 25px;
@@ -104,8 +108,15 @@ h1 {
   transition: 0.5s ease;
 }
 
-.navBarContainer button:hover {
+.navBarContainer .navBarContent .rightContent button:hover {
   scale: .92;
+}
+
+.navBarContainer .navBarContent .rightContent img {
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
 }
 /* Nav Bar CSS */
 
@@ -362,3 +373,50 @@ h1 {
   scale: 0.9;
 }
 /* Modal CSS */
+
+/* Login CSS */
+
+.modalBackdrop .modalContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primarycolor);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.login-container label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--accentcolor);
+  color: var(--primarycolor);
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.login-container button:hover {
+  scale: 0.9;
+}
+/* Login CSS */

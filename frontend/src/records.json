@@ -1,72 +1,1136 @@
-[
+{
+  "polls": [
     {
-        "id": 0,
-        "question": "Post 1",
-        "answers": [
-          { "label": "A", "answerWeight": 1 },
-          { "label": "B", "answerWeight": 1 },
-          { "label": "C", "answerWeight": 1 },
-          { "label": "D", "answerWeight": 1 }
-        ],
-        "category": "Gaming",
-        "pollCount": 4,
-        "likes": 10,
-        "answered": false
+      "id": 1,
+      "question": "What genre of games do you hate the most?",
+      "answers": [
+        { "label": "MMO", "answerWeight": 28 },
+        { "label": "FPS", "answerWeight": 51 },
+        { "label": "Adventure/Open World", "answerWeight": 64 },
+        { "label": "Battle Royale", "answerWeight": 13 }
+      ],
+      "category": "Gaming",
+      "pollCount": 15,
+      "likes": 10,
+      "answered": false
     },
     {
-        "id": 1,
-        "question": "Post 1",
-        "answers": [
-          { "label": "A", "answerWeight": 1 },
-          { "label": "B", "answerWeight": 1 },
-          { "label": "C", "answerWeight": 1 },
-          { "label": "D", "answerWeight": 1 }
-        ],
-        "category": "Gaming",
-        "pollCount": 4,
-        "likes": 10,
-        "answered": false
+      "id": 2,
+      "question": "What stat is most important when upgrading a character?",
+      "answers": [
+        { "label": "Attack", "answerWeight": 10 },
+        { "label": "Defense", "answerWeight": 26 },
+        { "label": "Speed", "answerWeight": 41 },
+        { "label": "Health", "answerWeight": 32 }
+      ],
+      "category": "Gaming",
+      "pollCount": 23,
+      "likes": 14,
+      "answered": false
+    },
+
+    {
+      "id": 3,
+      "question": "Best sniper in COD history?",
+      "answers": [
+        { "label": "Intervention", "answerWeight": 14 },
+        { "label": "Barrett .50 Cal", "answerWeight": 28 },
+        { "label": "MSR", "answerWeight": 34 },
+        { "label": "Ballista", "answerWeight": 15 }
+      ],
+      "category": "Gaming",
+      "pollCount": 45,
+      "likes": 35,
+      "answered": false
+    },
+
+    {
+      "id": 4,
+      "question": "Which Shrek movie do you love the most?",
+      "answers": [
+        { "label": "Shrek", "answerWeight": 14 },
+        { "label": "Shrek 2", "answerWeight": 36 },
+        { "label": "Shrek 3", "answerWeight": 42 }
+      ],
+      "category": "Movies",
+      "pollCount": 30,
+      "likes": 25,
+      "answered": false
+    },
+
+    {
+      "id": 5,
+      "question": "Opinions on The Great Gatsby?",
+      "answers": [
+        { "label": "Absolutely loved it!", "answerWeight": 13 },
+        { "label": "It's not that great...", "answerWeight": 37 },
+        { "label": "I was confused the entire time", "answerWeight": 41 }
+      ],
+      "category": "Movies",
+      "pollCount": 23,
+      "likes": 19,
+      "answered": false
+    },
+
+    {
+      "id": 6,
+      "question": "Best Disney/Pixar movie?",
+      "answers": [
+        { "label": "Inside Out", "answerWeight": 31 },
+        { "label": "Toy Story", "answerWeight": 25 },
+        { "label": "Monster's Inc.", "answerWeight": 14 },
+        { "label": "Cars", "answerWeight": 47 }
+      ],
+      "category": "Movies",
+      "pollCount": 52,
+      "likes": 35,
+      "answered": false
+    },
+
+    {
+      "id": 7,
+      "question": "Opinions on the show The Wire?",
+      "answers": [
+        { "label": "Loved it", "answerWeight": 23 },
+        { "label": "Good but season 2 was lacking", "answerWeight": 17 },
+        { "label": "Too violent", "answerWeight": 14 }
+      ],
+      "category": "TV",
+      "pollCount": 55,
+      "likes": 32,
+      "answered": false
     },
     {
-        "id": 2,
-        "question": "Post 1",
-        "answers": [
-          { "label": "A", "answerWeight": 1 },
-          { "label": "B", "answerWeight": 1 },
-          { "label": "C", "answerWeight": 1 },
-          { "label": "D", "answerWeight": 1 }
-        ],
-        "category": "Gaming",
-        "pollCount": 4,
-        "likes": 10,
-        "answered": false
+      "id": 8,
+      "question": "What did you think of You part 2?",
+      "answers": [
+        { "label": "Joe Goldberg is insane", "answerWeight": 40 },
+        { "label": "It was great but also unexpected", "answerWeight": 13 },
+        { "label": "It ruined the show for me", "answerWeight": 18 }
+      ],
+      "category": "TV",
+      "pollCount": 71,
+      "likes": 56,
+      "answered": false
+    },
+
+    {
+      "id": 9,
+      "question": "Was the Netflix show Wednesday worth watching?",
+      "answers": [
+        { "label": "Absolutely!", "answerWeight": 22 },
+        { "label": "Nah it was overrated", "answerWeight": 14 }
+      ],
+      "category": "TV",
+      "pollCount": 36,
+      "likes": 15,
+      "answered": false
+    },
+
+    {
+      "id": 10,
+      "question": "Favorite woman artist?",
+      "answers": [
+        { "label": "Dua Lipa", "answerWeight": 13 },
+        { "label": "Ariana Grande", "answerWeight": 14 },
+        { "label": "Sza", "answerWeight": 18 },
+        { "label": "Jhene Aiko", "answerWeight": 13 }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 58,
+      "likes": 26,
+      "answered": false
+    },
+
+    {
+      "id": 11,
+      "question": "Favorite male artist?",
+      "answers": [
+        { "label": "Post Malone", "answerWeight": 12 },
+        { "label": "Justin Bieber", "answerWeight": 17 },
+        { "label": "Lil Nas X", "answerWeight": 14 },
+        { "label": "Mac Miller", "answerWeight": 23 }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 66,
+      "likes": 40,
+      "answered": false
+    },
+
+    {
+      "id": 12,
+      "question": "What festival had the best lineup this year?",
+      "answers": [
+        { "label": "Rolling Loud", "answerWeight": 23 },
+        { "label": "Coachella", "answerWeight": 22 }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 45,
+      "likes": 40,
+      "answered": false
     },
     {
-        "id": 3,
-        "question": "Post 1",
-        "answers": [
-          { "label": "A", "answerWeight": 1 },
-          { "label": "B", "answerWeight": 1 },
-          { "label": "C", "answerWeight": 1 },
-          { "label": "D", "answerWeight": 1 }
-        ],
-        "category": "Gaming",
-        "pollCount": 4,
-        "likes": 10,
-        "answered": false
+      "id": 13,
+      "question": "Which is your favorite open-world game?",
+      "answers": [
+        {
+          "label": "The Witcher 3",
+          "answerWeight": 24
+        },
+        {
+          "label": "The Elder Scrolls V: Skyrim",
+          "answerWeight": 13
+        },
+        {
+          "label": "Grand Theft Auto V",
+          "answerWeight": 18
+        },
+        {
+          "label": "Red Dead Redemption 2",
+          "answerWeight": 9
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 4,
+      "likes": 25,
+      "answered": false
     },
     {
-        "id": 4,
-        "question": "Post 1",
-        "answers": [
-          { "label": "A", "answerWeight": 1 },
-          { "label": "B", "answerWeight": 1 },
-          { "label": "C", "answerWeight": 1 },
-          { "label": "D", "answerWeight": 1 }
-        ],
-        "category": "Gaming",
-        "pollCount": 4,
-        "likes": 10,
-        "answered": false
+      "id": 14,
+      "question": "Best competitive multiplayer game?",
+      "answers": [
+        {
+          "label": "Overwatch",
+          "answerWeight": 1
+        },
+        {
+          "label": "Counter-Strike: Global Offensive",
+          "answerWeight": 1
+        },
+        {
+          "label": "League of Legends",
+          "answerWeight": 1
+        },
+        {
+          "label": "Rocket League",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 4,
+      "likes": 30,
+      "answered": false
+    },
+    {
+      "id": 15,
+      "question": "Which of these gaming consoles do you prefer?",
+      "answers": [
+        {
+          "label": "PlayStation 5",
+          "answerWeight": 1
+        },
+        {
+          "label": "Xbox Series X",
+          "answerWeight": 1
+        },
+        {
+          "label": "Nintendo Switch",
+          "answerWeight": 1
+        },
+        {
+          "label": "PC",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 4,
+      "likes": 35,
+      "answered": false
+    },
+    {
+      "id": 16,
+      "question": "Best superhero movie of all time?",
+      "answers": [
+        {
+          "label": "The Dark Knight",
+          "answerWeight": 1
+        },
+        {
+          "label": "Avengers: Endgame",
+          "answerWeight": 1
+        },
+        {
+          "label": "Black Panther",
+          "answerWeight": 1
+        },
+        {
+          "label": "Spider-Man: Into the Spider-Verse",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 4,
+      "likes": 40,
+      "answered": false
+    },
+    {
+      "id": 17,
+      "question": "Which movie franchise do you enjoy the most?",
+      "answers": [
+        {
+          "label": "Harry Potter",
+          "answerWeight": 1
+        },
+        {
+          "label": "Star Wars",
+          "answerWeight": 1
+        },
+        {
+          "label": "Lord of the Rings",
+          "answerWeight": 1
+        },
+        {
+          "label": "Marvel Cinematic Universe",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 4,
+      "likes": 45,
+      "answered": false
+    },
+    {
+      "id": 18,
+      "question": "Which is your favorite animated movie?",
+      "answers": [
+        {
+          "label": "Toy Story",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Lion King",
+          "answerWeight": 1
+        },
+        {
+          "label": "Spirited Away",
+          "answerWeight": 1
+        },
+        {
+          "label": "D",
+          "answerWeight": 1,
+          "answer": "Up"
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 4,
+      "likes": 50,
+      "answered": false
+    },
+    {
+      "id": 19,
+      "question": "Which TV series has the best storyline?",
+      "answers": [
+        {
+          "label": "Breaking Bad",
+          "answerWeight": 1
+        },
+        {
+          "label": "Game of Thrones",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Wire",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Sopranos",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 4,
+      "likes": 55,
+      "answered": false
+    },
+    {
+      "id": 20,
+      "question": "Best comedy TV series?",
+      "answers": [
+        {
+          "label": "Friends",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Office",
+          "answerWeight": 1
+        },
+        {
+          "label": "Parks and Recreation",
+          "answerWeight": 1
+        },
+        {
+          "label": "Brooklyn Nine-Nine",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 4,
+      "likes": 60,
+      "answered": false
+    },
+    {
+      "id": 21,
+      "question": "Which sci-fi TV series is your favorite?",
+      "answers": [
+        {
+          "label": "Doctor Who",
+          "answerWeight": 1
+        },
+        {
+          "label": "Star Trek",
+          "answerWeight": 1
+        },
+        {
+          "label": "The X-Files",
+          "answerWeight": 1
+        },
+        {
+          "label": "Battlestar Galactica",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 4,
+      "likes": 65,
+      "answered": false
+    },
+    {
+      "id": 22,
+      "question": "Most iconic pop star of the 21st century?",
+      "answers": [
+        {
+          "label": "Beyoncé",
+          "answerWeight": 1
+        },
+        {
+          "label": "Lady Gaga",
+          "answerWeight": 1
+        },
+        {
+          "label": "Rihanna",
+          "answerWeight": 1
+        },
+        {
+          "label": "Adele",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 4,
+      "likes": 70,
+      "answered": false
+    },
+    {
+      "id": 23,
+      "question": "Which social media platform do you use the most?",
+      "answers": [
+        {
+          "label": "Instagram",
+          "answerWeight": 1
+        },
+        {
+          "label": "Twitter",
+          "answerWeight": 1
+        },
+        {
+          "label": "TikTok",
+          "answerWeight": 1
+        },
+        {
+          "label": "Facebook",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 4,
+      "likes": 75,
+      "answered": false
+    },
+    {
+      "id": 24,
+      "question": "Which streaming service do you prefer?",
+      "answers": [
+        {
+          "label": "Netflix",
+          "answerWeight": 1
+        },
+        {
+          "label": "Disney+",
+          "answerWeight": 1
+        },
+        {
+          "label": "Hulu",
+          "answerWeight": 1
+        },
+        {
+          "label": "Amazon Prime Video",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 4,
+      "likes": 80,
+      "answered": false
+    },
+    {
+      "id": 25,
+      "question": "What is your favorite gaming console?",
+      "answers": [
+        {
+          "label": "PlayStation",
+          "answerWeight": 1
+        },
+        {
+          "label": "Xbox",
+          "answerWeight": 1
+        },
+        {
+          "label": "Nintendo Switch",
+          "answerWeight": 1
+        },
+        {
+          "label": "PC",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 12,
+      "likes": 43,
+      "answered": false
+    },
+    {
+      "id": 26,
+      "question": "What is your favorite video game genre?",
+      "answers": [
+        {
+          "label": "Action/Adventure",
+          "answerWeight": 1
+        },
+        {
+          "label": "Role-playing",
+          "answerWeight": 1
+        },
+        {
+          "label": "Sports",
+          "answerWeight": 1
+        },
+        {
+          "label": "Simulation",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 8,
+      "likes": 28,
+      "answered": false
+    },
+    {
+      "id": 27,
+      "question": "Which video game franchise has the best storyline?",
+      "answers": [
+        {
+          "label": "The Legend of Zelda",
+          "answerWeight": 1
+        },
+        {
+          "label": "Final Fantasy",
+          "answerWeight": 1
+        },
+        {
+          "label": "Metal Gear Solid",
+          "answerWeight": 1
+        },
+        {
+          "label": "BioShock",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 5,
+      "likes": 21,
+      "answered": false
+    },
+    {
+      "id": 28,
+      "question": "What is the best video game soundtrack?",
+      "answers": [
+        {
+          "label": "Chrono Trigger",
+          "answerWeight": 1
+        },
+        {
+          "label": "Final Fantasy VII",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Elder Scrolls V: Skyrim",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Legend of Zelda: Ocarina of Time",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 6,
+      "likes": 19,
+      "answered": false
+    },
+    {
+      "id": 29,
+      "question": "What is your favorite gaming controller?",
+      "answers": [
+        {
+          "label": "Xbox",
+          "answerWeight": 1
+        },
+        {
+          "label": "PlayStation",
+          "answerWeight": 1
+        },
+        {
+          "label": "Nintendo Switch",
+          "answerWeight": 1
+        },
+        {
+          "label": "PC Mouse and Keyboard",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 9,
+      "likes": 36,
+      "answered": false
+    },
+    {
+      "id": 30,
+      "question": "What is your favorite movie genre?",
+      "answers": [
+        {
+          "label": "Action",
+          "answerWeight": 1
+        },
+        {
+          "label": "Comedy",
+          "answerWeight": 1
+        },
+        {
+          "label": "Drama",
+          "answerWeight": 1
+        },
+        {
+          "label": "Horror",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 15,
+      "likes": 54,
+      "answered": false
+    },
+    {
+      "id": 31,
+      "question": "What is your favorite movie of all time?",
+      "answers": [
+        {
+          "label": "The Godfather",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Shawshank Redemption",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Dark Knight",
+          "answerWeight": 1
+        },
+        {
+          "label": "Pulp Fiction",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 22,
+      "likes": 87,
+      "answered": false
+    },
+    {
+      "id": 32,
+      "question": "Who is your favorite actor/actress?",
+      "answers": [
+        {
+          "label": "Tom Hanks",
+          "answerWeight": 1
+        },
+        {
+          "label": "Meryl Streep",
+          "answerWeight": 1
+        },
+        {
+          "label": "Leonardo DiCaprio",
+          "answerWeight": 1
+        },
+        {
+          "label": "Viola Davis",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 11,
+      "likes": 41,
+      "answered": false
+    },
+    {
+      "id": 33,
+      "question": "What is the best movie franchise?",
+      "answers": [
+        {
+          "label": "Star Wars",
+          "answerWeight": 1
+        },
+        {
+          "label": "Harry Potter",
+          "answerWeight": 1
+        },
+        {
+          "label": "Marvel Cinematic Universe",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Lord of the Rings",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 18,
+      "likes": 63,
+      "answered": false
+    },
+    {
+      "id": 34,
+      "question": "What is the best movie of the past year?",
+      "answers": [
+        {
+          "label": "Dune",
+          "answerWeight": 1
+        },
+        {
+          "label": "Spider-Man: No Way Home",
+          "answerWeight": 1
+        },
+        {
+          "label": "The French Dispatch",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Power of the Dog",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Movies",
+      "pollCount": 7,
+      "likes": 28,
+      "answered": false
+    },
+    {
+      "id": 35,
+      "question": "What is your favorite TV show genre?",
+      "answers": [
+        {
+          "label": "Comedy",
+          "answerWeight": 1
+        },
+        {
+          "label": "Drama",
+          "answerWeight": 1
+        },
+        {
+          "label": "Science Fiction/Fantasy",
+          "answerWeight": 1
+        },
+        {
+          "label": "Reality TV",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 16,
+      "likes": 59,
+      "answered": false
+    },
+    {
+      "id": 36,
+      "question": "What is your favorite TV show of all time?",
+      "answers": [
+        {
+          "label": "Friends",
+          "answerWeight": 1
+        },
+        {
+          "label": "Breaking Bad",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Sopranos",
+          "answerWeight": 1
+        },
+        {
+          "label": "Game of Thrones",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 25,
+      "likes": 93,
+      "answered": false
+    },
+    {
+      "id": 37,
+      "question": "Who is your favorite TV show character?",
+      "answers": [
+        {
+          "label": "Walter White (Breaking Bad)",
+          "answerWeight": 1
+        },
+        {
+          "label": "Tony Soprano (The Sopranos)",
+          "answerWeight": 1
+        },
+        {
+          "label": "Daenerys Targaryen (Game of Thrones)",
+          "answerWeight": 1
+        },
+        {
+          "label": "Michael Scott (The Office)",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 13,
+      "likes": 47,
+      "answered": false
+    },
+    {
+      "id": 38,
+      "question": "What is the best TV show currently on the air?",
+      "answers": [
+        {
+          "label": "Stranger Things",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Crown",
+          "answerWeight": 1
+        },
+        {
+          "label": "The Mandalorian",
+          "answerWeight": 1
+        },
+        {
+          "label": "Succession",
+          "answerWeight": 1
+        }
+      ],
+      "category": "TV",
+      "pollCount": 9,
+      "likes": 31,
+      "answered": false
+    },
+    {
+      "id": 39,
+      "question": "Who is your favorite superhero?",
+      "answers": [
+        {
+          "label": "Spider-Man",
+          "answerWeight": 1
+        },
+        {
+          "label": "Batman",
+          "answerWeight": 1
+        },
+        {
+          "label": "Iron Man",
+          "answerWeight": 1
+        },
+        {
+          "label": "Wonder Woman",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 20,
+      "likes": 72,
+      "answered": false
+    },
+    {
+      "id": 40,
+      "question": "What is your favorite book genre?",
+      "answers": [
+        {
+          "label": "Mystery/Thriller",
+          "answerWeight": 1
+        },
+        {
+          "label": "Romance",
+          "answerWeight": 1
+        },
+        {
+          "label": "Science Fiction/Fantasy",
+          "answerWeight": 1
+        },
+        {
+          "label": "Biography/Memoir",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 12,
+      "likes": 43,
+      "answered": false
+    },
+    {
+      "id": 41,
+      "question": "Who is your favorite author?",
+      "answers": [
+        {
+          "label": "Stephen King",
+          "answerWeight": 1
+        },
+        {
+          "label": "J.K. Rowling",
+          "answerWeight": 1
+        },
+        {
+          "label": "George R.R. Martin",
+          "answerWeight": 1
+        },
+        {
+          "label": "Malcolm Gladwell",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 7,
+      "likes": 24,
+      "answered": false
+    },
+    {
+      "id": 42,
+      "question": "What is your favorite music genre?",
+      "answers": [
+        {
+          "label": "Rock",
+          "answerWeight": 1
+        },
+        {
+          "label": "Hip-hop/Rap",
+          "answerWeight": 1
+        },
+        {
+          "label": "Pop",
+          "answerWeight": 1
+        },
+        {
+          "label": "Country",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 18,
+      "likes": 62,
+      "answered": false
+    },
+    {
+      "id": 43,
+      "question": "What is your favorite band or musician?",
+      "answers": [
+        {
+          "label": "The Beatles",
+          "answerWeight": 1
+        },
+        {
+          "label": "Queen",
+          "answerWeight": 1
+        },
+        {
+          "label": "Michael Jackson",
+          "answerWeight": 1
+        },
+        {
+          "label": "Beyonce",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 15,
+      "likes": 49,
+      "answered": false
+    },
+    {
+      "id": 44,
+      "question": "What is the best social media platform?",
+      "answers": [
+        {
+          "label": "Facebook",
+          "answerWeight": 1
+        },
+        {
+          "label": "Instagram",
+          "answerWeight": 1
+        },
+        {
+          "label": "Twitter",
+          "answerWeight": 1
+        },
+        {
+          "label": "TikTok",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 10,
+      "likes": 32,
+      "answered": false
+    },
+    {
+      "id": 45,
+      "question": "What is your favorite board game?",
+      "answers": [
+        {
+          "label": "Monopoly",
+          "answerWeight": 1
+        },
+        {
+          "label": "Scrabble",
+          "answerWeight": 1
+        },
+        {
+          "label": "Settlers of Catan",
+          "answerWeight": 1
+        },
+        {
+          "label": "Chess",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 14,
+      "likes": 46,
+      "answered": false
+    },
+    {
+      "id": 46,
+      "question": "What is your favorite comic book series?",
+      "answers": [
+        {
+          "label": "The Walking Dead",
+          "answerWeight": 1
+        },
+        {
+          "label": "Batman",
+          "answerWeight": 1
+        },
+        {
+          "label": "Spider-Man",
+          "answerWeight": 1
+        },
+        {
+          "label": "X-Men",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 11,
+      "likes": 38,
+      "answered": false
+    },
+    {
+      "id": 47,
+      "question": "What is your favorite theme park?",
+      "answers": [
+        {
+          "label": "Disneyland",
+          "answerWeight": 1
+        },
+        {
+          "label": "Universal Studios",
+          "answerWeight": 1
+        },
+        {
+          "label": "Six Flags",
+          "answerWeight": 1
+        },
+        {
+          "label": "Cedar Point",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 8,
+      "likes": 29,
+      "answered": false
+    },
+    {
+      "id": 48,
+      "question": "What is your favorite video streaming service?",
+      "answers": [
+        {
+          "label": "Netflix",
+          "answerWeight": 1
+        },
+        {
+          "label": "Hulu",
+          "answerWeight": 1
+        },
+        {
+          "label": "Disney+",
+          "answerWeight": 1
+        },
+        {
+          "label": "Amazon Prime Video",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 19,
+      "likes": 67,
+      "answered": false
+    },
+    {
+      "id": 49,
+      "question": "What is your favorite fast food chain?",
+      "answers": [
+        {
+          "label": "McDonald's",
+          "answerWeight": 1
+        },
+        {
+          "label": "Burger King",
+          "answerWeight": 1
+        },
+        {
+          "label": "Taco Bell",
+          "answerWeight": 1
+        },
+        {
+          "label": "KFC",
+          "answerWeight": 1
+        }
+      ],
+      "category": "Pop Culture",
+      "pollCount": 23,
+      "likes": 82,
+      "answered": false
     }
-]
+  ]
+}
