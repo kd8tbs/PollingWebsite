@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CreateNewPoll from "./CreateNewPoll";
 import Featured from "./Featured";
 import HeroSection from "./HeroSection";
 import NavBar from "./NavBar";
 import Poll from "./Poll";
 import Login from "./Login";
-import records from "../records.json";
 
 export default function Home() {
   const [openPollModal, setOpenPollModal] = useState(false);
@@ -13,11 +12,52 @@ export default function Home() {
   const [openModal, setOpenModal] = useState(false);
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [login, setLogin] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const featuredCategories = [
+    { category: "Gaming", polls: [{}] }, 
+    { category: "Movies", polls: [{}] },
+    { category: "TV", polls: [{}] },
+    { category: "Pop Culture", polls: [{}] }, 
+  ];
+
+  useEffect(() => {
+    const fetchPolls = async () => {
+      try {
+        let response = await fetch(
+          "http://localhost:3000/polls?category=Gaming&_limit=5&_sort=likes&_order=asc"
+        );
+        const gamingPolls = await response.json();
+        response = await fetch(
+          "http://localhost:3000/polls?category=Movies&_limit=5&_sort=likes&_order=asc"
+        );
+        const moviePolls = await response.json();
+        response = await fetch(
+          "http://localhost:3000/polls?category=TV&_limit=5&_sort=likes&_order=asc"
+        );
+        const tvPolls = await response.json();
+        response = await fetch(
+          "http://localhost:3000/polls?category=Pop Culture&_limit=5&_sort=likes&_order=asc"
+        );
+        const pcPolls = await response.json();
+
+        featuredCategories[0].polls = gamingPolls;
+        featuredCategories[1].polls = moviePolls;
+        featuredCategories[2].polls = tvPolls;
+        featuredCategories[3].polls = pcPolls;
+      } catch (err) {
+        console.log(err.stack);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    (async () => await fetchPolls())();
+  }, [featuredCategories]);
 
   function handleModal() {
     setOpenModal(!openModal);
   }
-  
+
   async function handlePollModal(props) {
     setClickedPost(props);
     await setOpenPollModal(!openPollModal);
@@ -48,9 +88,17 @@ export default function Home() {
   return (
     <div className="home">
       {/* Nav Bar Component */}
-      <NavBar createPoll={handleModal} login={login} handleLoginModal={handleLoginModal}/>
+      <NavBar
+        createPoll={handleModal}
+        login={login}
+        handleLoginModal={handleLoginModal}
+      />
       <HeroSection />
-      <Featured handleModal={handlePollModal}/>
+      <Featured
+        handleModal={handlePollModal}
+        featuredCategories={featuredCategories}
+        isLoading={isLoading}
+      />
       {!openModal && !openPollModal && (
         <button
           className="openModalBtn"
@@ -62,8 +110,12 @@ export default function Home() {
         </button>
       )}
       {openModal && <CreateNewPoll closeModal={handleModal} />}
-      {openPollModal && <Poll closePollModal={handlePollModal} currPoll={clickedPost}/>}
-      {openLoginModal && <Login handleLogin={handleLogin} handleLoginModal={handleLoginModal}/>}
+      {openPollModal && (
+        <Poll closePollModal={handlePollModal} currPoll={clickedPost} />
+      )}
+      {openLoginModal && (
+        <Login handleLogin={handleLogin} handleLoginModal={handleLoginModal} />
+      )}
       {/* <button onClick={json()}></button> */}
     </div>
   );
