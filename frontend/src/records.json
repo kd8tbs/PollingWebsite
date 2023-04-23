@@ -4,13 +4,25 @@
       "id": 1,
       "question": "What genre of games do you hate the most?",
       "answers": [
-        { "label": "MMO", "answerWeight": 28 },
-        { "label": "FPS", "answerWeight": 51 },
-        { "label": "Adventure/Open World", "answerWeight": 64 },
-        { "label": "Battle Royale", "answerWeight": 13 }
+        {
+          "label": "MMO",
+          "answerWeight": 34
+        },
+        {
+          "label": "FPS",
+          "answerWeight": 77
+        },
+        {
+          "label": "Adventure/Open World",
+          "answerWeight": 93
+        },
+        {
+          "label": "Battle Royale",
+          "answerWeight": 61
+        }
       ],
       "category": "Gaming",
-      "pollCount": 15,
+      "pollCount": 265,
       "likes": 10,
       "answered": false
     },
@@ -18,85 +30,143 @@
       "id": 2,
       "question": "What stat is most important when upgrading a character?",
       "answers": [
-        { "label": "Attack", "answerWeight": 10 },
-        { "label": "Defense", "answerWeight": 26 },
-        { "label": "Speed", "answerWeight": 41 },
-        { "label": "Health", "answerWeight": 32 }
+        {
+          "label": "Attack",
+          "answerWeight": 40
+        },
+        {
+          "label": "Defense",
+          "answerWeight": 44
+        },
+        {
+          "label": "Speed",
+          "answerWeight": 98
+        },
+        {
+          "label": "Health",
+          "answerWeight": 55
+        }
       ],
       "category": "Gaming",
-      "pollCount": 23,
+      "pollCount": 237,
       "likes": 14,
       "answered": false
     },
-
     {
       "id": 3,
       "question": "Best sniper in COD history?",
       "answers": [
-        { "label": "Intervention", "answerWeight": 14 },
-        { "label": "Barrett .50 Cal", "answerWeight": 28 },
-        { "label": "MSR", "answerWeight": 34 },
-        { "label": "Ballista", "answerWeight": 15 }
+        {
+          "label": "Intervention",
+          "answerWeight": 13
+        },
+        {
+          "label": "Barrett .50 Cal",
+          "answerWeight": 88
+        },
+        {
+          "label": "MSR",
+          "answerWeight": 2
+        },
+        {
+          "label": "Ballista",
+          "answerWeight": 28
+        }
       ],
       "category": "Gaming",
-      "pollCount": 45,
+      "pollCount": 131,
       "likes": 35,
       "answered": false
     },
-
     {
       "id": 4,
       "question": "Which Shrek movie do you love the most?",
       "answers": [
-        { "label": "Shrek", "answerWeight": 14 },
-        { "label": "Shrek 2", "answerWeight": 36 },
-        { "label": "Shrek 3", "answerWeight": 42 }
+        {
+          "label": "Shrek",
+          "answerWeight": 89
+        },
+        {
+          "label": "Shrek 2",
+          "answerWeight": 15
+        },
+        {
+          "label": "Shrek 3",
+          "answerWeight": 19
+        }
       ],
       "category": "Movies",
-      "pollCount": 30,
+      "pollCount": 123,
       "likes": 25,
       "answered": false
     },
-
     {
       "id": 5,
       "question": "Opinions on The Great Gatsby?",
       "answers": [
-        { "label": "Absolutely loved it!", "answerWeight": 13 },
-        { "label": "It's not that great...", "answerWeight": 37 },
-        { "label": "I was confused the entire time", "answerWeight": 41 }
+        {
+          "label": "Absolutely loved it!",
+          "answerWeight": 63
+        },
+        {
+          "label": "It's not that great...",
+          "answerWeight": 72
+        },
+        {
+          "label": "I was confused the entire time",
+          "answerWeight": 16
+        }
       ],
       "category": "Movies",
-      "pollCount": 23,
+      "pollCount": 151,
       "likes": 19,
       "answered": false
     },
-
     {
       "id": 6,
       "question": "Best Disney/Pixar movie?",
       "answers": [
-        { "label": "Inside Out", "answerWeight": 31 },
-        { "label": "Toy Story", "answerWeight": 25 },
-        { "label": "Monster's Inc.", "answerWeight": 14 },
-        { "label": "Cars", "answerWeight": 47 }
+        {
+          "label": "Inside Out",
+          "answerWeight": 60
+        },
+        {
+          "label": "Toy Story",
+          "answerWeight": 43
+        },
+        {
+          "label": "Monster's Inc.",
+          "answerWeight": 68
+        },
+        {
+          "label": "Cars",
+          "answerWeight": 82
+        }
       ],
       "category": "Movies",
-      "pollCount": 52,
+      "pollCount": 253,
       "likes": 35,
       "answered": false
     },
-
     {
       "id": 7,
       "question": "Opinions on the show The Wire?",
       "answers": [
-        { "label": "Loved it", "answerWeight": 23 },
-        { "label": "Good but season 2 was lacking", "answerWeight": 17 },
-        { "label": "Too violent", "answerWeight": 14 }
+        {
+          "label": "Loved it",
+          "answerWeight": 30
+        },
+        {
+          "label": "Good but season 2 was lacking",
+          "answerWeight": 76
+        },
+        {
+          "label": "Too violent",
+          "answerWeight": 29
+        }
       ],
       "category": "TV",
-      "pollCount": 55,
+      "pollCount": 135,
       "likes": 32,
       "answered": false
     },
@@ -104,68 +174,109 @@
       "id": 8,
       "question": "What did you think of You part 2?",
       "answers": [
-        { "label": "Joe Goldberg is insane", "answerWeight": 40 },
-        { "label": "It was great but also unexpected", "answerWeight": 13 },
-        { "label": "It ruined the show for me", "answerWeight": 18 }
+        {
+          "label": "Joe Goldberg is insane",
+          "answerWeight": 75
+        },
+        {
+          "label": "It was great but also unexpected",
+          "answerWeight": 52
+        },
+        {
+          "label": "It ruined the show for me",
+          "answerWeight": 43
+        }
       ],
       "category": "TV",
-      "pollCount": 71,
+      "pollCount": 170,
       "likes": 56,
       "answered": false
     },
-
     {
       "id": 9,
       "question": "Was the Netflix show Wednesday worth watching?",
       "answers": [
-        { "label": "Absolutely!", "answerWeight": 22 },
-        { "label": "Nah it was overrated", "answerWeight": 14 }
+        {
+          "label": "Absolutely!",
+          "answerWeight": 32
+        },
+        {
+          "label": "Nah it was overrated",
+          "answerWeight": 15
+        }
       ],
       "category": "TV",
-      "pollCount": 36,
+      "pollCount": 47,
       "likes": 15,
       "answered": false
     },
-
     {
       "id": 10,
       "question": "Favorite woman artist?",
       "answers": [
-        { "label": "Dua Lipa", "answerWeight": 13 },
-        { "label": "Ariana Grande", "answerWeight": 14 },
-        { "label": "Sza", "answerWeight": 18 },
-        { "label": "Jhene Aiko", "answerWeight": 13 }
+        {
+          "label": "Dua Lipa",
+          "answerWeight": 11
+        },
+        {
+          "label": "Ariana Grande",
+          "answerWeight": 96
+        },
+        {
+          "label": "Sza",
+          "answerWeight": 48
+        },
+        {
+          "label": "Jhene Aiko",
+          "answerWeight": 93
+        }
       ],
       "category": "Pop Culture",
-      "pollCount": 58,
+      "pollCount": 248,
       "likes": 26,
       "answered": false
     },
-
     {
       "id": 11,
       "question": "Favorite male artist?",
       "answers": [
-        { "label": "Post Malone", "answerWeight": 12 },
-        { "label": "Justin Bieber", "answerWeight": 17 },
-        { "label": "Lil Nas X", "answerWeight": 14 },
-        { "label": "Mac Miller", "answerWeight": 23 }
+        {
+          "label": "Post Malone",
+          "answerWeight": 8
+        },
+        {
+          "label": "Justin Bieber",
+          "answerWeight": 90
+        },
+        {
+          "label": "Lil Nas X",
+          "answerWeight": 78
+        },
+        {
+          "label": "Mac Miller",
+          "answerWeight": 14
+        }
       ],
       "category": "Pop Culture",
-      "pollCount": 66,
+      "pollCount": 190,
       "likes": 40,
       "answered": false
     },
-
     {
       "id": 12,
       "question": "What festival had the best lineup this year?",
       "answers": [
-        { "label": "Rolling Loud", "answerWeight": 23 },
-        { "label": "Coachella", "answerWeight": 22 }
+        {
+          "label": "Rolling Loud",
+          "answerWeight": 4
+        },
+        {
+          "label": "Coachella",
+          "answerWeight": 95
+        }
       ],
       "category": "Pop Culture",
-      "pollCount": 45,
+      "pollCount": 99,
       "likes": 40,
       "answered": false
     },
@@ -175,23 +286,23 @@
       "answers": [
         {
           "label": "The Witcher 3",
-          "answerWeight": 24
+          "answerWeight": 37
         },
         {
           "label": "The Elder Scrolls V: Skyrim",
-          "answerWeight": 13
+          "answerWeight": 57
         },
         {
           "label": "Grand Theft Auto V",
-          "answerWeight": 18
+          "answerWeight": 19
         },
         {
           "label": "Red Dead Redemption 2",
-          "answerWeight": 9
+          "answerWeight": 66
         }
       ],
       "category": "Gaming",
-      "pollCount": 4,
+      "pollCount": 179,
       "likes": 25,
       "answered": false
     },
@@ -201,23 +312,23 @@
       "answers": [
         {
           "label": "Overwatch",
-          "answerWeight": 1
+          "answerWeight": 86
         },
         {
           "label": "Counter-Strike: Global Offensive",
-          "answerWeight": 1
+          "answerWeight": 5
         },
         {
           "label": "League of Legends",
-          "answerWeight": 1
+          "answerWeight": 7
         },
         {
           "label": "Rocket League",
-          "answerWeight": 1
+          "answerWeight": 24
         }
       ],
       "category": "Gaming",
-      "pollCount": 4,
+      "pollCount": 122,
       "likes": 30,
       "answered": false
     },
@@ -227,23 +338,23 @@
       "answers": [
         {
           "label": "PlayStation 5",
-          "answerWeight": 1
+          "answerWeight": 31
         },
         {
           "label": "Xbox Series X",
-          "answerWeight": 1
+          "answerWeight": 15
         },
         {
           "label": "Nintendo Switch",
-          "answerWeight": 1
+          "answerWeight": 48
         },
         {
           "label": "PC",
-          "answerWeight": 1
+          "answerWeight": 4
         }
       ],
       "category": "Gaming",
-      "pollCount": 4,
+      "pollCount": 98,
       "likes": 35,
       "answered": false
     },
@@ -253,23 +364,23 @@
       "answers": [
         {
           "label": "The Dark Knight",
-          "answerWeight": 1
+          "answerWeight": 89
         },
         {
           "label": "Avengers: Endgame",
-          "answerWeight": 1
+          "answerWeight": 29
         },
         {
           "label": "Black Panther",
-          "answerWeight": 1
+          "answerWeight": 28
         },
         {
           "label": "Spider-Man: Into the Spider-Verse",
-          "answerWeight": 1
+          "answerWeight": 10
         }
       ],
       "category": "Movies",
-      "pollCount": 4,
+      "pollCount": 156,
       "likes": 40,
       "answered": false
     },
@@ -279,7 +390,7 @@
       "answers": [
         {
           "label": "Harry Potter",
-          "answerWeight": 1
+          "answerWeight": 14
         },
         {
           "label": "Star Wars",
@@ -287,15 +398,15 @@
         },
         {
           "label": "Lord of the Rings",
-          "answerWeight": 1
+          "answerWeight": 69
         },
         {
           "label": "Marvel Cinematic Universe",
-          "answerWeight": 1
+          "answerWeight": 13
         }
       ],
       "category": "Movies",
-      "pollCount": 4,
+      "pollCount": 97,
       "likes": 45,
       "answered": false
     },
@@ -305,24 +416,24 @@
       "answers": [
         {
           "label": "Toy Story",
-          "answerWeight": 1
+          "answerWeight": 45
         },
         {
           "label": "The Lion King",
-          "answerWeight": 1
+          "answerWeight": 63
         },
         {
           "label": "Spirited Away",
-          "answerWeight": 1
+          "answerWeight": 74
         },
         {
           "label": "D",
-          "answerWeight": 1,
+          "answerWeight": 24,
           "answer": "Up"
         }
       ],
       "category": "Movies",
-      "pollCount": 4,
+      "pollCount": 206,
       "likes": 50,
       "answered": false
     },
@@ -332,23 +443,23 @@
       "answers": [
         {
           "label": "Breaking Bad",
-          "answerWeight": 1
+          "answerWeight": 73
         },
         {
           "label": "Game of Thrones",
-          "answerWeight": 1
+          "answerWeight": 44
         },
         {
           "label": "The Wire",
-          "answerWeight": 1
+          "answerWeight": 15
         },
         {
           "label": "The Sopranos",
-          "answerWeight": 1
+          "answerWeight": 14
         }
       ],
       "category": "TV",
-      "pollCount": 4,
+      "pollCount": 146,
       "likes": 55,
       "answered": false
     },
@@ -358,23 +469,23 @@
       "answers": [
         {
           "label": "Friends",
-          "answerWeight": 1
+          "answerWeight": 81
         },
         {
           "label": "The Office",
-          "answerWeight": 1
+          "answerWeight": 26
         },
         {
           "label": "Parks and Recreation",
-          "answerWeight": 1
+          "answerWeight": 56
         },
         {
           "label": "Brooklyn Nine-Nine",
-          "answerWeight": 1
+          "answerWeight": 31
         }
       ],
       "category": "TV",
-      "pollCount": 4,
+      "pollCount": 194,
       "likes": 60,
       "answered": false
     },
@@ -384,23 +495,23 @@
       "answers": [
         {
           "label": "Doctor Who",
-          "answerWeight": 1
+          "answerWeight": 14
         },
         {
           "label": "Star Trek",
-          "answerWeight": 1
+          "answerWeight": 53
         },
         {
           "label": "The X-Files",
-          "answerWeight": 1
+          "answerWeight": 37
         },
         {
           "label": "Battlestar Galactica",
-          "answerWeight": 1
+          "answerWeight": 96
         }
       ],
       "category": "TV",
-      "pollCount": 4,
+      "pollCount": 200,
       "likes": 65,
       "answered": false
     },
@@ -409,24 +520,24 @@
       "question": "Most iconic pop star of the 21st century?",
       "answers": [
         {
-          "label": "Beyoncé",
-          "answerWeight": 1
+          "label": "Beyonc\u00e9",
+          "answerWeight": 42
         },
         {
           "label": "Lady Gaga",
-          "answerWeight": 1
+          "answerWeight": 55
         },
         {
           "label": "Rihanna",
-          "answerWeight": 1
+          "answerWeight": 19
         },
         {
           "label": "Adele",
-          "answerWeight": 1
+          "answerWeight": 43
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 4,
+      "pollCount": 159,
       "likes": 70,
       "answered": false
     },
@@ -436,23 +547,23 @@
       "answers": [
         {
           "label": "Instagram",
-          "answerWeight": 1
+          "answerWeight": 81
         },
         {
           "label": "Twitter",
-          "answerWeight": 1
+          "answerWeight": 89
         },
         {
           "label": "TikTok",
-          "answerWeight": 1
+          "answerWeight": 81
         },
         {
           "label": "Facebook",
-          "answerWeight": 1
+          "answerWeight": 41
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 4,
+      "pollCount": 292,
       "likes": 75,
       "answered": false
     },
@@ -462,23 +573,23 @@
       "answers": [
         {
           "label": "Netflix",
-          "answerWeight": 1
+          "answerWeight": 37
         },
         {
           "label": "Disney+",
-          "answerWeight": 1
+          "answerWeight": 26
         },
         {
           "label": "Hulu",
-          "answerWeight": 1
+          "answerWeight": 48
         },
         {
           "label": "Amazon Prime Video",
-          "answerWeight": 1
+          "answerWeight": 63
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 4,
+      "pollCount": 174,
       "likes": 80,
       "answered": false
     },
@@ -488,23 +599,23 @@
       "answers": [
         {
           "label": "PlayStation",
-          "answerWeight": 1
+          "answerWeight": 58
         },
         {
           "label": "Xbox",
-          "answerWeight": 1
+          "answerWeight": 48
         },
         {
           "label": "Nintendo Switch",
-          "answerWeight": 1
+          "answerWeight": 99
         },
         {
           "label": "PC",
-          "answerWeight": 1
+          "answerWeight": 61
         }
       ],
       "category": "Gaming",
-      "pollCount": 12,
+      "pollCount": 266,
       "likes": 43,
       "answered": false
     },
@@ -514,23 +625,23 @@
       "answers": [
         {
           "label": "Action/Adventure",
-          "answerWeight": 1
+          "answerWeight": 50
         },
         {
           "label": "Role-playing",
-          "answerWeight": 1
+          "answerWeight": 85
         },
         {
           "label": "Sports",
-          "answerWeight": 1
+          "answerWeight": 89
         },
         {
           "label": "Simulation",
-          "answerWeight": 1
+          "answerWeight": 13
         }
       ],
       "category": "Gaming",
-      "pollCount": 8,
+      "pollCount": 237,
       "likes": 28,
       "answered": false
     },
@@ -540,23 +651,23 @@
       "answers": [
         {
           "label": "The Legend of Zelda",
-          "answerWeight": 1
+          "answerWeight": 95
         },
         {
           "label": "Final Fantasy",
-          "answerWeight": 1
+          "answerWeight": 88
         },
         {
           "label": "Metal Gear Solid",
-          "answerWeight": 1
+          "answerWeight": 43
         },
         {
           "label": "BioShock",
-          "answerWeight": 1
+          "answerWeight": 20
         }
       ],
       "category": "Gaming",
-      "pollCount": 5,
+      "pollCount": 246,
       "likes": 21,
       "answered": false
     },
@@ -566,23 +677,23 @@
       "answers": [
         {
           "label": "Chrono Trigger",
-          "answerWeight": 1
+          "answerWeight": 51
         },
         {
           "label": "Final Fantasy VII",
-          "answerWeight": 1
+          "answerWeight": 88
         },
         {
           "label": "The Elder Scrolls V: Skyrim",
-          "answerWeight": 1
+          "answerWeight": 11
         },
         {
           "label": "The Legend of Zelda: Ocarina of Time",
-          "answerWeight": 1
+          "answerWeight": 79
         }
       ],
       "category": "Gaming",
-      "pollCount": 6,
+      "pollCount": 229,
       "likes": 19,
       "answered": false
     },
@@ -592,23 +703,23 @@
       "answers": [
         {
           "label": "Xbox",
-          "answerWeight": 1
+          "answerWeight": 38
         },
         {
           "label": "PlayStation",
-          "answerWeight": 1
+          "answerWeight": 16
         },
         {
           "label": "Nintendo Switch",
-          "answerWeight": 1
+          "answerWeight": 61
         },
         {
           "label": "PC Mouse and Keyboard",
-          "answerWeight": 1
+          "answerWeight": 91
         }
       ],
       "category": "Gaming",
-      "pollCount": 9,
+      "pollCount": 206,
       "likes": 36,
       "answered": false
     },
@@ -618,23 +729,23 @@
       "answers": [
         {
           "label": "Action",
-          "answerWeight": 1
+          "answerWeight": 99
         },
         {
           "label": "Comedy",
-          "answerWeight": 1
+          "answerWeight": 80
         },
         {
           "label": "Drama",
-          "answerWeight": 1
+          "answerWeight": 50
         },
         {
           "label": "Horror",
-          "answerWeight": 1
+          "answerWeight": 78
         }
       ],
       "category": "Movies",
-      "pollCount": 15,
+      "pollCount": 307,
       "likes": 54,
       "answered": false
     },
@@ -644,23 +755,23 @@
       "answers": [
         {
           "label": "The Godfather",
-          "answerWeight": 1
+          "answerWeight": 19
         },
         {
           "label": "The Shawshank Redemption",
-          "answerWeight": 1
+          "answerWeight": 61
         },
         {
           "label": "The Dark Knight",
-          "answerWeight": 1
+          "answerWeight": 76
         },
         {
           "label": "Pulp Fiction",
-          "answerWeight": 1
+          "answerWeight": 33
         }
       ],
       "category": "Movies",
-      "pollCount": 22,
+      "pollCount": 189,
       "likes": 87,
       "answered": false
     },
@@ -670,23 +781,23 @@
       "answers": [
         {
           "label": "Tom Hanks",
-          "answerWeight": 1
+          "answerWeight": 50
         },
         {
           "label": "Meryl Streep",
-          "answerWeight": 1
+          "answerWeight": 67
         },
         {
           "label": "Leonardo DiCaprio",
-          "answerWeight": 1
+          "answerWeight": 79
         },
         {
           "label": "Viola Davis",
-          "answerWeight": 1
+          "answerWeight": 67
         }
       ],
       "category": "Movies",
-      "pollCount": 11,
+      "pollCount": 263,
       "likes": 41,
       "answered": false
     },
@@ -696,23 +807,23 @@
       "answers": [
         {
           "label": "Star Wars",
-          "answerWeight": 1
+          "answerWeight": 88
         },
         {
           "label": "Harry Potter",
-          "answerWeight": 1
+          "answerWeight": 4
         },
         {
           "label": "Marvel Cinematic Universe",
-          "answerWeight": 1
+          "answerWeight": 98
         },
         {
           "label": "The Lord of the Rings",
-          "answerWeight": 1
+          "answerWeight": 61
         }
       ],
       "category": "Movies",
-      "pollCount": 18,
+      "pollCount": 251,
       "likes": 63,
       "answered": false
     },
@@ -722,23 +833,23 @@
       "answers": [
         {
           "label": "Dune",
-          "answerWeight": 1
+          "answerWeight": 83
         },
         {
           "label": "Spider-Man: No Way Home",
-          "answerWeight": 1
+          "answerWeight": 41
         },
         {
           "label": "The French Dispatch",
-          "answerWeight": 1
+          "answerWeight": 75
         },
         {
           "label": "The Power of the Dog",
-          "answerWeight": 1
+          "answerWeight": 4
         }
       ],
       "category": "Movies",
-      "pollCount": 7,
+      "pollCount": 203,
       "likes": 28,
       "answered": false
     },
@@ -748,23 +859,23 @@
       "answers": [
         {
           "label": "Comedy",
-          "answerWeight": 1
+          "answerWeight": 83
         },
         {
           "label": "Drama",
-          "answerWeight": 1
+          "answerWeight": 47
         },
         {
           "label": "Science Fiction/Fantasy",
-          "answerWeight": 1
+          "answerWeight": 72
         },
         {
           "label": "Reality TV",
-          "answerWeight": 1
+          "answerWeight": 69
         }
       ],
       "category": "TV",
-      "pollCount": 16,
+      "pollCount": 271,
       "likes": 59,
       "answered": false
     },
@@ -774,23 +885,23 @@
       "answers": [
         {
           "label": "Friends",
-          "answerWeight": 1
+          "answerWeight": 5
         },
         {
           "label": "Breaking Bad",
-          "answerWeight": 1
+          "answerWeight": 26
         },
         {
           "label": "The Sopranos",
-          "answerWeight": 1
+          "answerWeight": 50
         },
         {
           "label": "Game of Thrones",
-          "answerWeight": 1
+          "answerWeight": 50
         }
       ],
       "category": "TV",
-      "pollCount": 25,
+      "pollCount": 131,
       "likes": 93,
       "answered": false
     },
@@ -800,15 +911,15 @@
       "answers": [
         {
           "label": "Walter White (Breaking Bad)",
-          "answerWeight": 1
+          "answerWeight": 78
         },
         {
           "label": "Tony Soprano (The Sopranos)",
-          "answerWeight": 1
+          "answerWeight": 68
         },
         {
           "label": "Daenerys Targaryen (Game of Thrones)",
-          "answerWeight": 1
+          "answerWeight": 9
         },
         {
           "label": "Michael Scott (The Office)",
@@ -816,7 +927,7 @@
         }
       ],
       "category": "TV",
-      "pollCount": 13,
+      "pollCount": 156,
       "likes": 47,
       "answered": false
     },
@@ -826,23 +937,23 @@
       "answers": [
         {
           "label": "Stranger Things",
-          "answerWeight": 1
+          "answerWeight": 48
         },
         {
           "label": "The Crown",
-          "answerWeight": 1
+          "answerWeight": 87
         },
         {
           "label": "The Mandalorian",
-          "answerWeight": 1
+          "answerWeight": 39
         },
         {
           "label": "Succession",
-          "answerWeight": 1
+          "answerWeight": 21
         }
       ],
       "category": "TV",
-      "pollCount": 9,
+      "pollCount": 195,
       "likes": 31,
       "answered": false
     },
@@ -852,23 +963,23 @@
       "answers": [
         {
           "label": "Spider-Man",
-          "answerWeight": 1
+          "answerWeight": 86
         },
         {
           "label": "Batman",
-          "answerWeight": 1
+          "answerWeight": 12
         },
         {
           "label": "Iron Man",
-          "answerWeight": 1
+          "answerWeight": 95
         },
         {
           "label": "Wonder Woman",
-          "answerWeight": 1
+          "answerWeight": 2
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 20,
+      "pollCount": 195,
       "likes": 72,
       "answered": false
     },
@@ -878,23 +989,23 @@
       "answers": [
         {
           "label": "Mystery/Thriller",
-          "answerWeight": 1
+          "answerWeight": 43
         },
         {
           "label": "Romance",
-          "answerWeight": 1
+          "answerWeight": 97
         },
         {
           "label": "Science Fiction/Fantasy",
-          "answerWeight": 1
+          "answerWeight": 5
         },
         {
           "label": "Biography/Memoir",
-          "answerWeight": 1
+          "answerWeight": 54
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 12,
+      "pollCount": 199,
       "likes": 43,
       "answered": false
     },
@@ -904,23 +1015,23 @@
       "answers": [
         {
           "label": "Stephen King",
-          "answerWeight": 1
+          "answerWeight": 46
         },
         {
           "label": "J.K. Rowling",
-          "answerWeight": 1
+          "answerWeight": 73
         },
         {
           "label": "George R.R. Martin",
-          "answerWeight": 1
+          "answerWeight": 9
         },
         {
           "label": "Malcolm Gladwell",
-          "answerWeight": 1
+          "answerWeight": 53
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 7,
+      "pollCount": 181,
       "likes": 24,
       "answered": false
     },
@@ -930,23 +1041,23 @@
       "answers": [
         {
           "label": "Rock",
-          "answerWeight": 1
+          "answerWeight": 65
         },
         {
           "label": "Hip-hop/Rap",
-          "answerWeight": 1
+          "answerWeight": 66
         },
         {
           "label": "Pop",
-          "answerWeight": 1
+          "answerWeight": 74
         },
         {
           "label": "Country",
-          "answerWeight": 1
+          "answerWeight": 55
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 18,
+      "pollCount": 260,
       "likes": 62,
       "answered": false
     },
@@ -956,23 +1067,23 @@
       "answers": [
         {
           "label": "The Beatles",
-          "answerWeight": 1
+          "answerWeight": 27
         },
         {
           "label": "Queen",
-          "answerWeight": 1
+          "answerWeight": 70
         },
         {
           "label": "Michael Jackson",
-          "answerWeight": 1
+          "answerWeight": 68
         },
         {
           "label": "Beyonce",
-          "answerWeight": 1
+          "answerWeight": 92
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 15,
+      "pollCount": 257,
       "likes": 49,
       "answered": false
     },
@@ -982,23 +1093,23 @@
       "answers": [
         {
           "label": "Facebook",
-          "answerWeight": 1
+          "answerWeight": 84
         },
         {
           "label": "Instagram",
-          "answerWeight": 1
+          "answerWeight": 24
         },
         {
           "label": "Twitter",
-          "answerWeight": 1
+          "answerWeight": 31
         },
         {
           "label": "TikTok",
-          "answerWeight": 1
+          "answerWeight": 33
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 10,
+      "pollCount": 172,
       "likes": 32,
       "answered": false
     },
@@ -1008,23 +1119,23 @@
       "answers": [
         {
           "label": "Monopoly",
-          "answerWeight": 1
+          "answerWeight": 10
         },
         {
           "label": "Scrabble",
-          "answerWeight": 1
+          "answerWeight": 37
         },
         {
           "label": "Settlers of Catan",
-          "answerWeight": 1
+          "answerWeight": 4
         },
         {
           "label": "Chess",
-          "answerWeight": 1
+          "answerWeight": 58
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 14,
+      "pollCount": 109,
       "likes": 46,
       "answered": false
     },
@@ -1034,23 +1145,23 @@
       "answers": [
         {
           "label": "The Walking Dead",
-          "answerWeight": 1
+          "answerWeight": 26
         },
         {
           "label": "Batman",
-          "answerWeight": 1
+          "answerWeight": 7
         },
         {
           "label": "Spider-Man",
-          "answerWeight": 1
+          "answerWeight": 31
         },
         {
           "label": "X-Men",
-          "answerWeight": 1
+          "answerWeight": 39
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 11,
+      "pollCount": 103,
       "likes": 38,
       "answered": false
     },
@@ -1060,23 +1171,23 @@
       "answers": [
         {
           "label": "Disneyland",
-          "answerWeight": 1
+          "answerWeight": 28
         },
         {
           "label": "Universal Studios",
-          "answerWeight": 1
+          "answerWeight": 39
         },
         {
           "label": "Six Flags",
-          "answerWeight": 1
+          "answerWeight": 98
         },
         {
           "label": "Cedar Point",
-          "answerWeight": 1
+          "answerWeight": 86
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 8,
+      "pollCount": 251,
       "likes": 29,
       "answered": false
     },
@@ -1086,23 +1197,23 @@
       "answers": [
         {
           "label": "Netflix",
-          "answerWeight": 1
+          "answerWeight": 31
         },
         {
           "label": "Hulu",
-          "answerWeight": 1
+          "answerWeight": 48
         },
         {
           "label": "Disney+",
-          "answerWeight": 1
+          "answerWeight": 9
         },
         {
           "label": "Amazon Prime Video",
-          "answerWeight": 1
+          "answerWeight": 100
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 19,
+      "pollCount": 188,
       "likes": 67,
       "answered": false
     },
@@ -1112,23 +1223,23 @@
       "answers": [
         {
           "label": "McDonald's",
-          "answerWeight": 1
+          "answerWeight": 70
         },
         {
           "label": "Burger King",
-          "answerWeight": 1
+          "answerWeight": 31
         },
         {
           "label": "Taco Bell",
-          "answerWeight": 1
+          "answerWeight": 53
         },
         {
           "label": "KFC",
-          "answerWeight": 1
+          "answerWeight": 31
         }
       ],
       "category": "Pop Culture",
-      "pollCount": 23,
+      "pollCount": 185,
       "likes": 82,
       "answered": false
     }
