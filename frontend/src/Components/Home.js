@@ -18,8 +18,8 @@ export default function Home() {
     setOpenModal(!openModal);
   }
 
-  async function handlePollModal(props) {
-    setClickedPost(props);
+  async function handlePollModal(post) {
+    setClickedPost(post);
     await setOpenPollModal(!openPollModal);
   }
 
