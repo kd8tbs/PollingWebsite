@@ -71,6 +71,7 @@ h1 {
   transition: width 300ms ease-in-out;
   z-index: 0;
 }
+
 /* Poll CSS */
 
 /* Nav Bar CSS */
@@ -95,6 +96,7 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 .navBarContainer .navBarContent .rightContent button {
   height: 50px;
   color: var(--primarycolor);
@@ -118,6 +120,7 @@ h1 {
   height: 50px;
   object-fit: fill;
 }
+
 /* Nav Bar CSS */
 
 /* Home CSS */
@@ -134,7 +137,7 @@ h1 {
   height: 530px;
   background-color: var(--accentcolor);
   color: var(--primarycolor);
-  box-shadow: 0 0 10px 0  #000 inset;
+  box-shadow: 0 0 10px 0 #000 inset;
 }
 
 .featuredPollContainer {
@@ -152,6 +155,7 @@ h1 {
 .featuredPollContainer .featuredPollContent .answers {
   padding-top: 20px;
 }
+
 /* Featured Poll */
 
 /* Featured Categories */
@@ -166,7 +170,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  
+
 }
 
 .featuredContainer .featuredContent .featuredPostContainer {
@@ -202,6 +206,7 @@ h1 {
   float: right;
   padding-right: 10px;
 }
+
 /* Featured Categories */
 /* Home CSS */
 
@@ -224,16 +229,17 @@ h1 {
 .home .openModalBtn:hover {
   scale: 0.92;
 }
+
 /* Create New Button */
 
 /* Modal CSS */
-.modalBackdrop{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  background-color:rgba(0,0,0,.5);
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
   z-index: 2;
 }
 
@@ -349,6 +355,7 @@ h1 {
   width: calc(100% - 60px);
   padding: 30px;
 }
+
 .modalContainer .footer .footerContents {
   display: flex;
   justify-content: space-between;
@@ -370,6 +377,7 @@ h1 {
 .modalContainer .footer .footerContents input:hover {
   scale: 0.9;
 }
+
 /* Modal CSS */
 
 /* Login CSS */
@@ -417,4 +425,22 @@ h1 {
 .login-container button:hover {
   scale: 0.9;
 }
+
 /* Login CSS */
+
+/* select CSS */
+select {
+  background-color: var(--primarycolor);
+  color: var(---accentcolor);
+  border: 1px solid var(--accentcolor);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+select option {
+  background-color: var(--accentcolor);
+  color: var(--primarycolor);
+}
+
