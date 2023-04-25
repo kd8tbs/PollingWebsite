@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CreateNewPoll from "./CreateNewPoll";
-import Featured from "./Featured";
 import HeroSection from "./HeroSection";
 import NavBar from "./NavBar";
 import Poll from "./Poll";
 import Login from "./Login";
 import SectionManager from "./SectionManager";
+import ProfileModal from "./ProfileModal";
 
 export default function Home() {
   const [openPollModal, setOpenPollModal] = useState(false);
@@ -13,6 +13,9 @@ export default function Home() {
   const [openModal, setOpenModal] = useState(false);
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [login, setLogin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [openProfileModal, setOpenProfileModal] = useState(false);
+  const [profilePolls, setProfilePolls] = useState();
 
   async function handlePollModalClose(post) {
     if (post.answered === true) {
@@ -32,10 +35,10 @@ export default function Home() {
           "Content-type": "application/json; charset=UTF-8",
         },
       })
-      .then(response => response.json())
-      .then(json => console.log(json));
+        .then((response) => response.json())
+        .then((json) => console.log(json));
     }
-    
+
     await setOpenPollModal(!openPollModal);
   }
 
@@ -48,16 +51,36 @@ export default function Home() {
     await setOpenPollModal(!openPollModal);
   }
 
-  function handleLogin() {
+  function handleLogin(username) {
+    setUsername(username);
     setLogin(!login);
     setOpenLoginModal(!openLoginModal);
   }
 
   function handleLoginModal() {
     setOpenLoginModal(!openLoginModal);
-    console.log("login: " + login + " modal: " + openLoginModal);
   }
 
+  async function handleProfileModal() {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/polls?userName=${username}`
+      );
+      const polls = await response.json();
+      let temp = { polls: polls };
+      setProfilePolls(temp);
+      console.log(polls);
+    } catch (err) {
+      console.log(err.message);
+    } 
+    setOpenProfileModal(!openProfileModal);
+  }
+
+  function handleLogout() {
+    setLogin(false);
+    setUsername("");
+    setOpenProfileModal(false);
+  }
   return (
     <div className="home">
       {/* Nav Bar Component */}
@@ -65,6 +88,7 @@ export default function Home() {
         createPoll={handleModal}
         login={login}
         handleLoginModal={handleLoginModal}
+        handleProfileModal={handleProfileModal}
       />
       <HeroSection />
       <SectionManager handleModal={handlePollModal} />
@@ -83,7 +107,20 @@ export default function Home() {
         <Poll closePollModal={handlePollModalClose} currPoll={clickedPost} />
       )}
       {openLoginModal && (
-        <Login handleLogin={handleLogin} handleLoginModal={handleLoginModal} />
+        <Login
+          handleLogin={handleLogin}
+          handleLoginModal={handleLoginModal}
+          username={username}
+        />
+      )}
+      {openProfileModal && (
+        <ProfileModal
+          profilePolls={profilePolls}
+          username={username}
+          closeProfileModal={handleProfileModal}
+          handleLogout={handleLogout}
+          handleModal={handlePollModal}
+        />
       )}
     </div>
   );
