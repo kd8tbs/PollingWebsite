@@ -15,7 +15,7 @@ function CategoryPolls({ handleModal, categoryPolls, handleSection }) {
           <div
             key={index}
             className="featuredPost"
-            onClick={() => handleModal(handleModal, post)}
+            onClick={() => handleModal(post)}
           >
             <div className="featuredPostTitle">
               <h2>{post.question}</h2>
