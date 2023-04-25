@@ -16,7 +16,7 @@ function Login({ handleLogin, handleLoginModal }) {
     event.preventDefault();
     console.log(`Username: ${username}, Password: ${password}`);
     if(username === "pollinate" && password === "password") {
-      handleLogin();
+      handleLogin(username);
     } else {
       alert("wrong username or password");
     }

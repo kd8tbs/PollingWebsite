@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../Images/logo.png";
 import headshot from "../Images/headshot.jpg";
 
-function NavBar({ createPoll, login, handleLoginModal }) {
+function NavBar({ createPoll, login, handleLoginModal, handleProfileModal }) {
   return (
     <div className="navBarContainer">
       <div className="navBarContent">
@@ -21,7 +21,7 @@ function NavBar({ createPoll, login, handleLoginModal }) {
               Login
             </button>
           ) : (
-            <img src={headshot} alt="" />
+            <img src={headshot} alt="" onClick={() => handleProfileModal()}/>
           )}
         </div>
       </div>
