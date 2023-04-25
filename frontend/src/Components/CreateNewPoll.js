@@ -52,6 +52,8 @@ function CreateNewPoll({ closeModal }) {
     })
     .then(response => response.json())
     .then(json => console.log(json));
+
+    closeModal();
   };
 
   return (
