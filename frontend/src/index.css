@@ -444,3 +444,15 @@ select option {
   color: var(--primarycolor);
 }
 
+/* create new account button */
+#newAccountButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--accentcolor);
+  color: var(--primarycolor);
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+

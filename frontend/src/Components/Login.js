@@ -15,7 +15,7 @@ function Login({ handleLogin, handleLoginModal }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`Username: ${username}, Password: ${password}`);
-    if(username === "pollinate" && password === "password") {
+    if (username === "pollinate" && password === "password") {
       handleLogin();
     } else {
       alert("wrong username or password");
@@ -54,13 +54,13 @@ function Login({ handleLogin, handleLoginModal }) {
                 </label>
               </div>
 
-              
+
             </div>
           </div>
         </div>
         <div className="footer">
           <div className="footerContents">
-            <div></div>
+            <button id="newAccountButton">Create New Account</button>
             <input type="submit" value="Login" />
           </div>
         </div>
