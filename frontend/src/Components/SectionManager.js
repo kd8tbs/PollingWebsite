@@ -1,28 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import Featured from "./Featured";
 import CategoryPolls from "./CategoryPolls";
 
 function SectionManager({ handleModal }) {
   const [section, setSection] = useState(false); // false = featured, true = see more
   const [featuredPolls, setFeaturedPolls] = useState([]);
+  const [categoryPolls, setCategoryPolls] = useState([{category: ""}, {polls: ""}]);
 
   useEffect(() => {
     const fetchFeaturedPolls = async () => {
       try {
         let response = await fetch(
-          "http://localhost:3000/polls?category=Gaming&_sort=likes&_order=asc"
+          "http://localhost:3000/polls?category=Gaming&_limit=6&_sort=likes&_order=desc"
         );
         const gamingPolls = await response.json();
         response = await fetch(
-          "http://localhost:3000/polls?category=Movies&_sort=likes&_order=asc"
+          "http://localhost:3000/polls?category=Movies&_limit=6&_sort=likes&_order=desc"
         );
         const moviePolls = await response.json();
         response = await fetch(
-          "http://localhost:3000/polls?category=TV&_sort=likes&_order=asc"
+          "http://localhost:3000/polls?category=TV&_limit=6&_sort=likes&_order=desc"
         );
         const tvPolls = await response.json();
         response = await fetch(
-          "http://localhost:3000/polls?category=Pop Culture&_sort=likes&_order=asc"
+          "http://localhost:3000/polls?category=Pop Culture&_limit=6&_sort=likes&_order=desc"
         );
         const pcPolls = await response.json();
 
@@ -31,20 +32,34 @@ function SectionManager({ handleModal }) {
           { category: "Movies", polls: moviePolls },
           { category: "TV", polls: tvPolls },
           { category: "Pop Culture", polls: pcPolls },
-        ]
+        ];
 
         setFeaturedPolls(tempPolls);
       } catch (err) {
         console.log(err.stack);
-      } finally {
-        console.log(featuredPolls)
       }
     };
 
     (async () => await fetchFeaturedPolls())();
   }, []);
 
-  function handleSection() {
+  // useEffect(() => console.log(categoryPolls), [categoryPolls]);
+
+  async function handleSection(category) {
+    try {
+      if (!section) {
+        const response = await fetch(
+          "http://localhost:3000/polls?category=" +
+            category +
+            "&_sort=likes&_order=desc"
+        );
+        const polls = await response.json();
+        let temp = {category: category, polls: polls};
+        setCategoryPolls(temp);
+      }
+    } catch (err) {
+      console.log(err.message);
+    }
     setSection(!section);
   }
 
@@ -61,7 +76,7 @@ function SectionManager({ handleModal }) {
         {section && (
           <CategoryPolls
             handleModal={handleModal}
-            featuredPolls={featuredPolls}
+            categoryPolls={categoryPolls}
             handleSection={handleSection}
           />
         )}

@@ -1,7 +1,6 @@
 import React from "react";
 
 function Featured({ handleModal, featuredPolls, handleSection }) {
-  console.log(featuredPolls[0]);
 
   return (
     <>
@@ -9,7 +8,7 @@ function Featured({ handleModal, featuredPolls, handleSection }) {
         <div key={index}>
           <div style={{ display: "flex", flexDirection: "row", gap: "15px" }}>
             <h1>{section.category}</h1>
-            <button id="optionsButton" onClick={() => handleSection()}>See More +</button>
+            <button id="optionsButton" onClick={() => handleSection(section.category)}>See More +</button>
           </div>
           <div className="featuredPostContainer">
             {section.polls.map((post, index) => (

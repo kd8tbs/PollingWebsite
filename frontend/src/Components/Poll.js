@@ -1,44 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import post from "../records.json";
 
 function Poll({ closePollModal, currPoll }) {
-  const [answered, setAnswered] = useState(false);
   const [lastSelected, setLastSelected] = useState(0);
-  const [jsonObjIndex, setJsonObjIndex] = useState(0);
-
-  useEffect(() => {
-    if (currPoll.answered === true) setAnswered(true);
-  }, [currPoll.answered]);
 
   function handleSelected(index) {
-    // update answerWeight
-    if (currPoll.answered === true) {
-      setAnswered(true);
-    }
-
-    if (answered === false) {
-      setAnswered(true);
+    // if you have not answered the poll, update answered and increment answerweight
+    if (currPoll.answered  === false) {
+      currPoll.answered = true;
       setLastSelected(index);
-      for (let i = 0; i < post.length; i++) {
-        // increment answer value and increase poll count
-        if (currPoll.id === post[i].id) {
-          post[i].answers[index].answerWeight++;
-          post[i].pollCount++;
-          post[i].answered = true;
-          setJsonObjIndex(i);
-          console.log(post[i]);
-          return;
-        }
-      }
+      currPoll.pollCount++;
+      currPoll.answers[index].answerWeight++;
+      return;
     }
 
+    // if you are selecting the same answer multiple times
     if (index === lastSelected) {
       return;
     }
 
     // selecting a different answer
-    post[jsonObjIndex].answers[index].answerWeight++;
-    post[jsonObjIndex].answers[lastSelected].answerWeight--;
+    currPoll.answers[lastSelected].answerWeight--;
+    currPoll.answers[index].answerWeight++;
     setLastSelected(index);
   }
 
@@ -63,7 +46,7 @@ function Poll({ closePollModal, currPoll }) {
             <div className="featuredPollContainer">
               <div className="featuredPollContent" style={{ padding: "0" }}>
                 <div className="answers" style={{ color: "#fff" }}>
-                  {!answered ? (
+                  {!currPoll.answered ? (
                     <>
                       {currPoll.answers.map((answer, index) => (
                         <button

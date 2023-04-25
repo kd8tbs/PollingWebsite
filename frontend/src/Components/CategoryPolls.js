@@ -1,16 +1,17 @@
 import React from "react";
 
-function CategoryPolls({ handleModal, featuredPolls, handleSection }) {
+function CategoryPolls({ handleModal, categoryPolls, handleSection }) {
+  console.log(categoryPolls);
   return (
     <>
       <div style={{ display: "flex", flexDirection: "row", gap: "15px" }}>
-        <h1>{featuredPolls[0].category}</h1>
+        <h1>{categoryPolls && categoryPolls?.category}</h1>
         <button id="optionsButton" onClick={() => handleSection()}>
           Go Back to Featured Content
         </button>
       </div>
-      <div className="featuredPostContainer">
-        {featuredPolls[0].polls.map((post, index) => (
+      <div className="featuredPostContainer" style={{flexWrap: "wrap"}}>
+        {categoryPolls?.polls !== undefined ? categoryPolls?.polls.map((post, index) => (
           <div
             key={index}
             className="featuredPost"
@@ -24,7 +25,7 @@ function CategoryPolls({ handleModal, featuredPolls, handleSection }) {
               <h3>{post.likes} Likes</h3>
             </div>
           </div>
-        ))}
+        )) : undefined}
       </div>
     </>
   );
