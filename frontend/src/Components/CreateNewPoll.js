@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import posts from "../records.json";
 
 function CreateNewPoll({ closeModal }) {
-  const [addDesc, setAddDesc] = useState(false);
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
   const [answerList, setAnswerList] = useState([{ answer: "" }]);
 
-  function handleDesc() {
-    setAddDesc(!addDesc);
-  }
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+  };
+
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+    console.log(category);
+  };
 
   const handleAddAnswer = () => {
     setAnswerList([...answerList, { answer: "" }]);
@@ -25,9 +32,31 @@ function CreateNewPoll({ closeModal }) {
     setAnswerList(list);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    fetch("http://localhost:3000/polls", {
+      method: "POST",
+      body: JSON.stringify({
+        id: posts.polls.length + 1,
+        question: title,
+        answers: answerList,
+        category: category,
+        pollCount: 0,
+        likes: 0,
+        answered: false,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    })
+    .then(response => response.json())
+    .then(json => console.log(json));
+  };
+
   return (
     <div className="modalBackdrop">
-      <form className="modalContainer">
+      <form className="modalContainer" onSubmit={handleSubmit}>
         <div className="title">
           <h1>Create a Poll</h1>
           <button onClick={closeModal} id="modalCloseBtn">
@@ -36,35 +65,16 @@ function CreateNewPoll({ closeModal }) {
         </div>
         <div className="body">
           <label>Title</label>
-          <input type="text" required />
+          <input type="text" required onChange={(e) => handleTitleChange(e)} />
 
-          <div>
-            {addDesc ? (
-              <button
-                id="optionsButton"
-                onClick={() => {
-                  handleDesc();
-                }}
-              >
-                - description
-              </button>
-            ) : (
-              <button
-                id="optionsButton"
-                onClick={() => {
-                  handleDesc();
-                }}
-              >
-                + description
-              </button>
-            )}
-          </div>
-          {addDesc && <label>Description</label>}
-          {addDesc && <input type="text" required />}
+          <label for="category">Category</label>
+          <select name="category" onChange={(e) => handleCategoryChange(e)}>
+            <option value="Gaming">Gaming</option>
+            <option value="Movies">Movies</option>
+            <option value="TV">TV</option>
+            <option value="Pop Culture">Pop Culture</option>
+          </select>
 
-          {/* Answer Options
-         - map options onto modal
-         - add/remove options */}
           <label>Answer Options</label>
           {answerList.map((singleAnswer, index) => (
             <div key={index} className="answerContainer">

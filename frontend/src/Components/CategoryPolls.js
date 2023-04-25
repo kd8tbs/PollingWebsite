@@ -1,7 +1,7 @@
 import React from "react";
 
 function CategoryPolls({ handleModal, categoryPolls, handleSection }) {
-  console.log(categoryPolls);
+  
   return (
     <>
       <div style={{ display: "flex", flexDirection: "row", gap: "15px" }}>
