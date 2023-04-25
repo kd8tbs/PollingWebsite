@@ -4,7 +4,7 @@ import posts from "../records.json";
 function CreateNewPoll({ closeModal }) {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
-  const [answerList, setAnswerList] = useState([{ answer: "" }]);
+  const [answerList, setAnswerList] = useState([{ label: "", answerweight: 0 }]);
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -12,11 +12,10 @@ function CreateNewPoll({ closeModal }) {
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
-    console.log(category);
   };
 
   const handleAddAnswer = () => {
-    setAnswerList([...answerList, { answer: "" }]);
+    setAnswerList([...answerList, { label: "", answerweight: 0  }]);
   };
 
   const handleRemoveAnswer = (index) => {
@@ -29,6 +28,7 @@ function CreateNewPoll({ closeModal }) {
     const { name, value } = e.target;
     const list = [...answerList];
     list[index][name] = value;
+    console.log(list);
     setAnswerList(list);
   };
 
@@ -71,6 +71,7 @@ function CreateNewPoll({ closeModal }) {
 
           <label for="category">Category</label>
           <select name="category" onChange={(e) => handleCategoryChange(e)}>
+            <option value="" selected disabled hidden>Choose here</option>
             <option value="Gaming">Gaming</option>
             <option value="Movies">Movies</option>
             <option value="TV">TV</option>
@@ -82,10 +83,10 @@ function CreateNewPoll({ closeModal }) {
             <div key={index} className="answerContainer">
               <div className="col-75">
                 <input
-                  name="answer"
+                  name="label"
                   type="text"
                   required
-                  value={singleAnswer.answer}
+                  value={singleAnswer.label}
                   onChange={(e) => handleAnswerChange(e, index)}
                 />
                 {answerList.length - 1 === index && answerList.length < 4 && (

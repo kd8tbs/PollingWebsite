@@ -18,13 +18,13 @@
         },
         {
           "label": "Battle Royale",
-          "answerWeight": 61
+          "answerWeight": 62
         }
       ],
       "category": "Gaming",
-      "pollCount": 265,
-      "likes": 10,
-      "answered": false
+      "pollCount": 266,
+      "likes": 100,
+      "answered": true
     },
     {
       "id": 2,
@@ -707,7 +707,7 @@
         },
         {
           "label": "PlayStation",
-          "answerWeight": 16
+          "answerWeight": 17
         },
         {
           "label": "Nintendo Switch",
@@ -719,9 +719,9 @@
         }
       ],
       "category": "Gaming",
-      "pollCount": 206,
+      "pollCount": 207,
       "likes": 36,
-      "answered": false
+      "answered": true
     },
     {
       "id": 30,
@@ -1245,35 +1245,32 @@
     },
     {
       "id": 50,
-      "question": "jkasdhlfkjh",
+      "question": "Best Comedy Actor?",
       "answers": [
         {
-          "answer": "ashdflkjahsdf"
+          "label": "The Rock",
+          "answerweight": 0
         },
         {
-          "answer": "sffdasfads"
+          "label": "Jim Carrey",
+          "answerweight": 0
+        },
+        {
+          "label": "Adam Sandler",
+          "answerweight": 0
+        },
+        {
+          "label": "Ben Stiller",
+          "answerweight": 0
         }
       ],
-      "category": "",
+      "category": "Movies",
       "pollCount": 0,
       "likes": 0,
       "answered": false
     },
     {
-      "id": 51,
-      "question": "asdfasdf",
-      "answers": [
-        {
-          "answer": "afasfd"
-        },
-        {
-          "answer": "asfddsaf"
-        }
-      ],
-      "category": "",
-      "pollCount": 0,
-      "likes": 0,
-      "answered": false
+      "id": 51
     }
   ]
 }

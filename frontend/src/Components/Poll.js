@@ -38,7 +38,7 @@ function Poll({ closePollModal, currPoll }) {
         >
           <div className="title">
             <h1 id="question">{currPoll.question}</h1>
-            <button onClick={closePollModal} id="modalCloseBtn">
+            <button onClick={() => closePollModal(currPoll)} id="modalCloseBtn">
               X
             </button>
           </div>
@@ -48,7 +48,7 @@ function Poll({ closePollModal, currPoll }) {
                 <div className="answers" style={{ color: "#fff" }}>
                   {!currPoll.answered ? (
                     <>
-                      {currPoll.answers.map((answer, index) => (
+                      {currPoll?.answers !== undefined ? currPoll?.answers.map((answer, index) => (
                         <button
                           id="answer"
                           style={{
@@ -61,7 +61,7 @@ function Poll({ closePollModal, currPoll }) {
                         >
                           {answer.label}
                         </button>
-                      ))}
+                      )): undefined}
                     </>
                   ) : (
                     <>
@@ -77,7 +77,7 @@ function Poll({ closePollModal, currPoll }) {
                         >
                           <span
                             className="label"
-                            style={{ color: "var(--primarycolor)" }}
+                            style={{ color: "black", textShadow: "0px 1px 4px var(--accentcolor)" }}
                           >
                             {answer.label}
                           </span>

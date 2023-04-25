@@ -14,6 +14,31 @@ export default function Home() {
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [login, setLogin] = useState(false);
 
+  async function handlePollModalClose(post) {
+    if (post.answered === true) {
+      console.log(post);
+      fetch("http://localhost:3000/polls/" + post.id, {
+        method: "PATCH",
+        body: JSON.stringify({
+          id: post.id,
+          question: post.question,
+          answers: post.answers,
+          category: post.category,
+          pollCount: post.pollCount,
+          likes: post.likes,
+          answered: post.answered,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+      .then(response => response.json())
+      .then(json => console.log(json));
+    }
+    
+    await setOpenPollModal(!openPollModal);
+  }
+
   function handleModal() {
     setOpenModal(!openModal);
   }
@@ -42,7 +67,7 @@ export default function Home() {
         handleLoginModal={handleLoginModal}
       />
       <HeroSection />
-      <SectionManager handleModal={handlePollModal}/>
+      <SectionManager handleModal={handlePollModal} />
       {!openModal && !openPollModal && (
         <button
           className="openModalBtn"
@@ -55,7 +80,7 @@ export default function Home() {
       )}
       {openModal && <CreateNewPoll closeModal={handleModal} />}
       {openPollModal && (
-        <Poll closePollModal={handlePollModal} currPoll={clickedPost} />
+        <Poll closePollModal={handlePollModalClose} currPoll={clickedPost} />
       )}
       {openLoginModal && (
         <Login handleLogin={handleLogin} handleLoginModal={handleLoginModal} />
