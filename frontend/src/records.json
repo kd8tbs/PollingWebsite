@@ -759,7 +759,7 @@
         },
         {
           "label": "The Shawshank Redemption",
-          "answerWeight": 61
+          "answerWeight": 62
         },
         {
           "label": "The Dark Knight",
@@ -771,9 +771,9 @@
         }
       ],
       "category": "Movies",
-      "pollCount": 189,
-      "likes": 87,
-      "answered": false
+      "pollCount": 190,
+      "likes": 88,
+      "answered": true
     },
     {
       "id": 32,
@@ -1242,35 +1242,6 @@
       "pollCount": 185,
       "likes": 82,
       "answered": false
-    },
-    {
-      "id": 50,
-      "question": "Best Comedy Actor?",
-      "answers": [
-        {
-          "label": "The Rock",
-          "answerweight": 0
-        },
-        {
-          "label": "Jim Carrey",
-          "answerweight": 0
-        },
-        {
-          "label": "Adam Sandler",
-          "answerweight": 0
-        },
-        {
-          "label": "Ben Stiller",
-          "answerweight": 0
-        }
-      ],
-      "category": "Movies",
-      "pollCount": 0,
-      "likes": 0,
-      "answered": false
-    },
-    {
-      "id": 51
     }
   ]
 }

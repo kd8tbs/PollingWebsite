@@ -112,14 +112,14 @@ function Poll({ closePollModal, currPoll }) {
               <div>
                 <button
                   style={{ fontSize: "22px" }}
-                  onClick={() => currPoll.decreaseLikeValue()}
+                  onClick={() => currPoll.likes--}
                   id="optionsButton"
                 >
                   -
                 </button>
                 <button
                   style={{ fontSize: "22px" }}
-                  onClick={() => currPoll.increaseLikeValue()}
+                  onClick={() => {currPoll.like < 0 ? <></> : currPoll.likes++}}
                   id="optionsButton"
                 >
                   +

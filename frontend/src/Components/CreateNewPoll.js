@@ -4,7 +4,7 @@ import posts from "../records.json";
 function CreateNewPoll({ closeModal }) {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
-  const [answerList, setAnswerList] = useState([{ label: "", answerweight: 0 }]);
+  const [answerList, setAnswerList] = useState([{ label: "", answerWeight: 0 }]);
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -15,7 +15,7 @@ function CreateNewPoll({ closeModal }) {
   };
 
   const handleAddAnswer = () => {
-    setAnswerList([...answerList, { label: "", answerweight: 0  }]);
+    setAnswerList([...answerList, { label: "", answerWeight: 0  }]);
   };
 
   const handleRemoveAnswer = (index) => {
