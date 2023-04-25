@@ -1,25 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function ProfileModal({ username, closeProfileModal, handleLogout, handleModal }) {
-  const [profilePolls, setProfilePolls] = useState([]);
-
-  useEffect(() => {
-    const fetchProfilePolls = async () => {
-      try {
-        let response = await fetch(
-          `http://localhost:3000/polls?userName=${username}`
-        );
-        const polls = await response.json();
-        setProfilePolls(polls);
-      } catch (err) {
-        console.log(err.message);
-      } finally {
-        console.log(profilePolls);
-      }
-
-      (async () => await fetchProfilePolls())();
-    };
-  }, []);
+function ProfileModal({ username, closeProfileModal, handleLogout, handleModal, profilePolls }) {
 
   return (
     <>

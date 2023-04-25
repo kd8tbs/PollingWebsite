@@ -15,6 +15,7 @@ export default function Home() {
   const [login, setLogin] = useState(false);
   const [username, setUsername] = useState("");
   const [openProfileModal, setOpenProfileModal] = useState(false);
+  const [profilePolls, setProfilePolls] = useState();
 
   async function handlePollModalClose(post) {
     if (post.answered === true) {
@@ -34,10 +35,10 @@ export default function Home() {
           "Content-type": "application/json; charset=UTF-8",
         },
       })
-      .then(response => response.json())
-      .then(json => console.log(json));
+        .then((response) => response.json())
+        .then((json) => console.log(json));
     }
-    
+
     await setOpenPollModal(!openPollModal);
   }
 
@@ -60,7 +61,18 @@ export default function Home() {
     setOpenLoginModal(!openLoginModal);
   }
 
-  function handleProfileModal() {
+  async function handleProfileModal() {
+    try {
+      const response = await fetch(
+        `http://localhost:3000/polls?userName=${username}`
+      );
+      const polls = await response.json();
+      let temp = { polls: polls };
+      setProfilePolls(temp);
+      console.log(polls);
+    } catch (err) {
+      console.log(err.message);
+    } 
     setOpenProfileModal(!openProfileModal);
   }
 
@@ -95,9 +107,21 @@ export default function Home() {
         <Poll closePollModal={handlePollModalClose} currPoll={clickedPost} />
       )}
       {openLoginModal && (
-        <Login handleLogin={handleLogin} handleLoginModal={handleLoginModal} username={username}/>
+        <Login
+          handleLogin={handleLogin}
+          handleLoginModal={handleLoginModal}
+          username={username}
+        />
       )}
-      {openProfileModal && <ProfileModal username={username} closeProfileModal={handleProfileModal} handleLogout={handleLogout} handleModal={handlePollModal}/>}
+      {openProfileModal && (
+        <ProfileModal
+          profilePolls={profilePolls}
+          username={username}
+          closeProfileModal={handleProfileModal}
+          handleLogout={handleLogout}
+          handleModal={handlePollModal}
+        />
+      )}
     </div>
   );
 }
