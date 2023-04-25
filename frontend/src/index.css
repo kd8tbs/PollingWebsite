@@ -55,7 +55,7 @@ h1 {
 
 #answer .label {
   position: absolute;
-  color: var(--accentcolor);
+  color: var(--accentcolor2);
   top: 50%;
   width: calc(100% - 40px);
   transform: translateY(-50%);
