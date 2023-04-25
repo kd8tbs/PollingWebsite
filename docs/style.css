@@ -101,6 +101,18 @@ a:hover {
     color: #666;
 }
 
+.image_caption_container {
+    max-width: 50%;
+    height: auto;
+    text-align: center; /* centers the image horizontally */
+  }
+  
+  .image_caption_container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
 /* Media queries for responsive design */
 @media (max-width: 600px) {
     body {
