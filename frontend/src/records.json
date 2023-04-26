@@ -708,7 +708,7 @@
         },
         {
           "label": "Final Fantasy VII",
-          "answerWeight": 88
+          "answerWeight": 89
         },
         {
           "label": "The Elder Scrolls V: Skyrim",
@@ -720,9 +720,9 @@
         }
       ],
       "category": "Gaming",
-      "pollCount": 229,
+      "pollCount": 230,
       "likes": 19,
-      "answered": false,
+      "answered": true,
       "userName": "pollinate"
     },
     {
@@ -731,11 +731,11 @@
       "answers": [
         {
           "label": "Xbox",
-          "answerWeight": 38
+          "answerWeight": 37
         },
         {
           "label": "PlayStation",
-          "answerWeight": 16
+          "answerWeight": 17
         },
         {
           "label": "Nintendo Switch",

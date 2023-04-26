@@ -27,7 +27,7 @@ function ProfileModal({ username, closeProfileModal, handleLogout, handleModal, 
                         <div
                           key={index}
                           className="featuredPost"
-                          onClick={() => handleModal(post)}
+                          onClick={() => {handleModal(post); closeProfileModal();}}
                         >
                           <div className="featuredPostTitle">
                             <h2>{post.question}</h2>

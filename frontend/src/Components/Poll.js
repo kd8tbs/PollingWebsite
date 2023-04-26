@@ -51,6 +51,7 @@ function Poll({ closePollModal, currPoll }) {
                       {currPoll?.answers !== undefined ? currPoll?.answers.map((answer, index) => (
                         <button
                           id="answer"
+                          key={index}
                           style={{
                             color: "var(--accentcolor)",
                             border: "1px solid var(--accentcolor)",
@@ -68,6 +69,7 @@ function Poll({ closePollModal, currPoll }) {
                       {currPoll.answers.map((answer, index) => (
                         <button
                           id="answer"
+                          key={index}
                           style={{
                             border: "1px solid var(--accentcolor)",
                           }}
