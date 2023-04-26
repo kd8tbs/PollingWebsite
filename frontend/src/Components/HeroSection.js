@@ -6,10 +6,10 @@ function HeroSection() {
   const [poll, setPoll] = useState({
     question: "What's your favorite programming language?",
     answers: [
-      { label: "C", answerWeight: 10 },
-      { label: "Java", answerWeight: 20 },
-      { label: "Python", answerWeight: 30 },
-      { label: "Javascript", answerWeight: 40 },
+      { label: "C", answerWeight: 34 },
+      { label: "Java", answerWeight: 72 },
+      { label: "Python", answerWeight: 64 },
+      { label: "Javascript", answerWeight: 13 },
     ],
     pollCount: 100,
     increaseAnswerValue: function (index) {

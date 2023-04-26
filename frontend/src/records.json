@@ -704,7 +704,7 @@
       "answers": [
         {
           "label": "Chrono Trigger",
-          "answerWeight": 51
+          "answerWeight": 50
         },
         {
           "label": "Final Fantasy VII",
@@ -712,7 +712,7 @@
         },
         {
           "label": "The Elder Scrolls V: Skyrim",
-          "answerWeight": 11
+          "answerWeight": 12
         },
         {
           "label": "The Legend of Zelda: Ocarina of Time",
@@ -793,7 +793,7 @@
         },
         {
           "label": "The Dark Knight",
-          "answerWeight": 76
+          "answerWeight": 77
         },
         {
           "label": "Pulp Fiction",
@@ -801,9 +801,9 @@
         }
       ],
       "category": "Movies",
-      "pollCount": 189,
-      "likes": 87,
-      "answered": false,
+      "pollCount": 190,
+      "likes": 88,
+      "answered": true,
       "userName": "HappyCamper"
     },
     {
@@ -1342,6 +1342,28 @@
       "likes": 0,
       "answered": false,
       "userName": "BaconLover42"
+    },
+    {
+      "id": 53,
+      "question": "Game of the Year",
+      "answers": [
+        {
+          "label": "God of War",
+          "answerWeight": 0
+        },
+        {
+          "label": "Elden Ring",
+          "answerWeight": 1
+        },
+        {
+          "label": "Among Us",
+          "answerWeight": 0
+        }
+      ],
+      "category": "Gaming",
+      "pollCount": 1,
+      "likes": 1,
+      "answered": true
     }
   ]
 }
